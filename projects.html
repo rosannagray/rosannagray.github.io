@@ -9,95 +9,120 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="css/my_css.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse"
-					data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="index.html">Rosanna's Portfolio</a>
-					<div class="nav-collapse in collapse">
-						<ul class="nav">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="about.html">About Me</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li class="active">
-								<a href="projects.html">Projects</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="skills.html">Skills</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="process.html">Process</a>
-							</li>
-							<li class="divider-vertical"></li>
-						</ul>
+					<div class="span12">
+						<a class="btn btn-navbar" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</a>
+						<div class="span1" id="logo">
+							<a href="index.html">
+								<img src="img/sponge.png" alt="sponge_logo">
+							</a>
+						</div>
+						<div class="span3">
+							<a class="brand" href="index.html">
+								Rosanna's Portfolio</a>
+						</div>
+						<div class="nav-collapse in collapse">
+							<ul class="nav">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li>
+									<a href="about.html">About Me</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li class="active">
+									<a href="projects.html">Projects</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li>
+									<a href="skills.html">Skills</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li>
+									<a href="process.html">Process</a>
+								</li>
+								<li class="divider-vertical"></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row page-head" id="projects-head">
-				<div class="page-topic">
-					<h1>
-						My Projects
-					</h1>
+		<div id="projects-head">
+			<div class="container">
+				<div class="span12">
+					<div class="page-topic span2">
+						<img src="img/icons/projects.png" alt="projects_icon">
+					</div>
+					<div class="span6 offset2">
+						<h1>
+							My Projects
+						</h1>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="span3 bs-docs-sidebar">
-					<ul class="nav nav-list bs-docs-sidenav affix">
-						<li>
-							<a href="#websites">
-								<i class="icon-chevron-right"></i>
-								Websites
-							</a>
-						</li>
-						<li>
-							<a href="#interactive">
-								<i class="icon-chevron-right"></i>
-								Interactive Experiments
-							</a>
-						</li>
-						<li>
-							<a href="#2D">
-								<i class="icon-chevron-right"></i>
-								2D Graphics
-							</a>
-						</li>
-						<li>
-							<a href="#3D">
-								<i class="icon-chevron-right"></i>
-								3D Graphics
-							</a>
-						</li>
-						<li>
-							<a href="#short">
-								<i class="icon-chevron-right"></i>
-								Short Films
-							</a>
-						</li>
-						<li>
-							<a href="#group">
-								<i class="icon-chevron-right"></i>
-								Group Projects
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="span9">
+		</div>
+		<div id="side_menu">
+			<div class="container">
+				<ul class="nav nav-pills nav-stacked affix">
+					<li>
+						<a href="#websites">
+							<i class="icon-chevron-right"></i>
+							Websites
+						</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#interactive">
+							<i class="icon-chevron-right"></i>
+							Interactive Experiments
+						</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#twoD">
+							<i class="icon-chevron-right"></i>
+							2D Graphics
+						</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#threeD">
+							<i class="icon-chevron-right"></i>
+							3D Graphics
+						</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#short">
+							<i class="icon-chevron-right"></i>
+							Short Films
+						</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#group">
+							<i class="icon-chevron-right"></i>
+							Group Projects
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="websites_section">
+			<div class="container">
+				<div class="offset3 span6">
 					<!--Websites
 						========================================== -->
 					<section id="websites">
@@ -128,6 +153,12 @@
 							</li>
 						</ul>
 					</section>
+				</div>
+			</div>
+		</div>
+		<div id="interactive_section">
+			<div class="container">
+				<div class="offset3 span6"
 					<!--Interactive Experiments
 						========================================== -->
 					<section id="interactive">
@@ -159,9 +190,15 @@
 							</li>
 						</ul>
 					</section>
+				</div>
+			</div>
+		</div>
+		<div id="twoD_section">
+			<div class="container">
+				<div class="offset3 span6"
 					<!--2D Graphics
 						========================================== -->
-					<section id="2D">
+					<section id="twoD">
 						<div class="topic">
 							<h2>2D Graphics</h2>
 						</div>
@@ -186,9 +223,15 @@
 							</li>
 						</ul>
 					</section>
+				</div>
+			</div>
+		</div>
+		<div id="threeD_section">
+			<div class="container">
+				<div class="offset3 span6"
 					<!--3D Graphics
 						========================================== -->
-					<section id="3D">
+					<section id="threeD">
 						<div class="topic">
 							<h2>3D Graphics</h2>
 						</div>
@@ -236,6 +279,12 @@
 							</li>
 						</ul>
 					</section>
+				</div>
+			</div>
+		</div>
+		<div id="animation_section">
+			<div class="container">
+				<div class="offset3 span6">
 					<!--Animations
 						========================================== -->
 					<section id="short">
@@ -267,6 +316,12 @@
 							</li>
 						</ul>
 					</section>
+				</div>
+			</div>
+		</div>
+		<div id="group_section">
+			<div class="container">
+				<div class="offset3 span6">
 					<!--Group Projects
 						========================================== -->
 					<section id="group">
@@ -305,16 +360,18 @@
 					</section>
 				</div>
 			</div>
-			<footer class="row">
+		</div>
+		<footer>
+			<div class="container">
 				<p class="span12">
-					&copy; 2012 Rosanna Fong 
+					&copy; 2013 Rosanna Fong 
 					| Wellington, New Zealand 
 					| Email: contact@rosanna.co.nz
 					| <a href="http://www.linkedin.com/pub/rosanna-fong/37/ab6/201">
 					<img src="img/linkedin.png"></a>
 				</p>
-			</footer>
-		</div>
+			</div>
+		</footer>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>

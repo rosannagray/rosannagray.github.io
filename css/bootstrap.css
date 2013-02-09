@@ -3049,7 +3049,7 @@ button.close {
   margin-bottom: 0;
   *margin-left: .3em;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 40px;
   *line-height: 20px;
   color: #333333;
   text-align: center;
@@ -4410,7 +4410,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 15px 10px;
+  padding: 22px 15px 10px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
@@ -5843,7 +5843,7 @@ a.badge:hover {
   margin-bottom: 0;
 }
 
-.hero-unit {
+/*.hero-unit {
   padding: 60px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -5854,6 +5854,18 @@ a.badge:hover {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+}*/
+.hero-unit {
+  background: #9ABBBF; /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#9ABBBF'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#9ebdc1)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+  padding-top: 62px;
+  padding-bottom: 0px;
+  height: auto;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #d1d2d4;
+  box-shadow: 0 1px 1px 0 #5e5e5e;
 }
 
 .hero-unit h1 {

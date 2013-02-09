@@ -9,63 +9,85 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="css/my_css.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse"
-					data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="index.html">Rosanna's Portfolio</a>
-					<div class="nav-collapse in collapse">
-						<ul class="nav">
-							<li class="active">
-								<a href="index.html">Home</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="about.html">About Me</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="projects.html">Projects</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="skills.html">Skills</a>
-							</li>
-							<li class="divider-vertical"></li>
-							<li>
-								<a href="process.html">Process</a>
-							</li>
-							<li class="divider-vertical"></li>
-						</ul>
+					<div class="span12">
+						<a class="btn btn-navbar" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</a>
+						<div class="span1" id="logo">
+							<a href="index.html">
+								<img src="img/sponge.png" alt="sponge_logo">
+							</a>
+						</div>
+						<div class="span3">
+							<a class="brand" href="index.html">
+								Rosanna's Portfolio</a>
+						</div>
+						<div class="nav-collapse in collapse">
+							<ul class="nav">
+								<li class="active">
+									<a href="index.html">Home</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li>
+									<a href="about.html">About Me</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li>
+									<a href="projects.html">Projects</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li>
+									<a href="skills.html">Skills</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li>
+									<a href="process.html">Process</a>
+								</li>
+								<li class="divider-vertical"></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="hero-unit">
+		<div class="hero-unit" id="hero">
+			<div class="container">
+				<div class="span12">
 					<h1>I am a...</h1>
-					<p class="lead">
-						Recent media design graduate, a stationery lover, and a total foodie.
-					</p>
+					<div class="span3">
+						<img src="img/mantaray_off.png" alt="sponge_logo">
+					</div>
+					<div class="span6">
+						<p class="lead">
+							Recent media design graduate, a stationery lover, and a total foodie.
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="span5">
+		</div>
+		<div id="welcome">
+			<div class="container">
+				<div class="span12">
 					<h2>Welcome to my Portfolio!</h2>
 					<p>
 						Thank you for visiting my design portfolio! Here you can find out
 						information about me, my projects, skills, process, and contact details.
 					</p>
 				</div>
-				<div class="span5 offset1">
+			</div>
+		</div>
+		<div id="site-features">
+			<div class="container">	
+				<div id="about" class="span6">
 					<h2>About Me</h2>
 					<p>
 						Learn about my design background, education, and little quirks about me.
@@ -73,10 +95,14 @@
 					<p>
 						<a class="btn" href="about.html">Read More >></a>
 					</p>
+					<hr>
 				</div>
-			</div>
-			<div class="row">
-				<div class="span5">
+				<div class="span5 icon">
+					<p class="triangle-isosceles left">
+						<img src="img/icons/about.png" alt="about_me_icon">
+					</p>
+				</div>
+				<div id="projects" class="span6">
 					<h2>Projects</h2>
 					<p>
 						Explore some of my design projects.
@@ -84,8 +110,14 @@
 					<p>
 						<a class="btn" href="projects.html">Read More >></a>
 					</p>
+					<hr>
 				</div>
-				<div class="span5 offset1">
+				<div class="span5 icon">
+					<p class="triangle-isosceles left">
+						<img src="img/icons/projects.png" alt="projects_icon">
+					</p>
+				</div>
+				<div id="skills" class="span6">
 					<h2>Skills</h2>
 					<p>
 						Find out about my design skills, technical knowledge, and proficiency with various software.
@@ -93,30 +125,14 @@
 					<p>
 						<a class="btn" href="skills.html">Read More >></a>
 					</p>
+					<hr>
 				</div>
-			</div>
-			<!--div class="row">
-				<div class="span5">
-					<h2>Projects</h2>
-					<p>
-						Explore some of my design work.
-					</p>
-					<p>
-						<a class="btn" href="projects.html">Read More >></a>
+				<div class="span5 icon">
+					<p class="triangle-isosceles left">
+						<img src="img/icons/skills.png" alt="skills_icon">
 					</p>
 				</div>
-				<div class="span5 offset1">
-					<h2>Skills</h2>
-					<p>
-						Find out about my design skills, technical knowledge, and proficiency with various software.
-					</p>
-					<p>
-						<a class="btn" href="skills.html">Read More >></a>
-					</p>
-				</div>
-			</div-->
-			<div class="row">
-				<div class="span5">
+				<div id="process" class="span6">
 					<h2>Process</h2>
 					<p>
 						Learn how I go about design projects by following a process. 
@@ -125,17 +141,25 @@
 						<a class="btn" href="process.html">Read More >></a>
 					</p>
 				</div>
+				<div class="span5 icon">
+					<p class="triangle-isosceles left">
+						<img src="img/icons/process.png" alt="process_icon">
+					</p>
+				</div>
 			</div>
-			<footer class="row">
+		</div>
+					
+		<footer>
+			<div class="container">
 				<p class="span12">
-					&copy; 2012 Rosanna Fong 
+					&copy; 2013 Rosanna Fong 
 					| Wellington, New Zealand 
 					| Email: contact@rosanna.co.nz
 					| <a href="http://www.linkedin.com/pub/rosanna-fong/37/ab6/201">
 					<img src="img/linkedin.png"></a>
 				</p>
-			</footer>
-		</div>
+			</div>
+		</footer>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
