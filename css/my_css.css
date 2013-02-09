@@ -1,0 +1,187 @@
+/*!
+ * Rosanna v1.0
+ *
+ * Copyright 2012 Rosanna
+ */
+
+ /*my_css*/
+p,h1,h2,h3,h4 {
+  margin: 5px 10px;
+}
+
+ .topic {
+	padding-bottom: 9px;
+  margin: 50px 0 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.topic h2{
+  padding-top: 45px;
+}
+
+.page-header {
+	padding-bottom: 9px;
+  margin: 70px 0 auto 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.span6 h4 {
+  padding-top: 10px;
+  color: #498BA6;
+}
+
+.education p {
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.interests p {
+  font-weight: 300;
+  font-size: 24pt;
+  color: #9ABBBF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.interests {
+  list-style-type: none;
+}
+
+.process img {
+  padding-right: 10px;
+}
+
+.process {
+  padding-bottom: 50px;
+}
+
+.process p {
+  padding-left: 20px;
+}
+
+body {
+  background: url('../img/noisy_net.png');
+}
+
+div.row {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.navbar-fixed-bottom {
+  background: url('../img/trees_dark2.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding-top: 450px;
+  padding-bottom: 50px;
+  box-shadow: none;
+  border: none;
+}
+
+.page-topic {
+  position:relative;
+  color:#fff;
+  /*background:#498BA6*/
+  background: transparent url('../img/paper.png');
+  font-size:1.5em;
+  float:left;
+  clear:both;
+  padding:10px 10px 10px 20px;
+  margin-left:-20px;
+  margin-bottom:20px;
+  margin-top: 60px;
+  text-shadow:0 -1px #b9b9b9, 0 1px #fdfdfd;
+
+  -moz-box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+  -o-box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+  box-shadow:2px 2px 0 rgba(0,0,0,0.1);
+
+  -moz-transform:rotate(-25deg); -moz-transform:skewx(25deg) translatex(150px);
+  -webkit-transform:rotate(-25deg);
+  -o-transform:rotate(-25deg);
+  -ms-transform:rotate(-25deg);
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=-0.25);
+}
+
+.page-topic:before{
+  content:" ";
+  display:block;
+  width:10px;
+  height:10px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin-bottom:-10px;
+  z-index:-1;
+}
+
+footer p {
+  color: #ffffff;
+  text-align: center;
+  padding-top:20px;
+}
+
+.hero-unit {
+  background: #9ABBBF; /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#9ABBBF'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#9ABBBF)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+  background-image: url('../img/hero2.png');
+}
+
+.page-head {
+  background-color: #403D3A;
+}
+
+#skills-head {
+  background: #403D3A url('../img/banners/skills_banner.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+#about-head {
+  background: #403D3A url('../img/banners/about_banner.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+#projects-head {
+  background: #403D3A url('../img/banners/projects_banner.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+#process-head {
+  background: #403D3A url('../img/banners/process_banner.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.img-rounded {
+  padding-left: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  .bs-docs-sidenav {
+    display: none;
+  }
+
+  .video-clips iframe {
+    width: 300px;
+    height: 181px;
+  }
+}
+
+@media handheld, only screen and (max-width: 320px)  {
+  .video-clips iframe {
+    width: 200px;
+    height: 181px;
+  }
+}
