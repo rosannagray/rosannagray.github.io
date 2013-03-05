@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width" />
         <link rel="shortcut icon" href="/favicon.ico" />
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#side_menu" data-offset="0">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
@@ -78,42 +78,49 @@
 			<div class="container">
 				<ul class="nav nav-pills nav-stacked affix">
 					<li>
-						<a href="#websites">
+						<a href="#websites" onclick="$.scrollTo( '#websites', 1000, {easing:''} ); CngClass(this);" class="selected">
 							<i class="icon-chevron-right"></i>
 							Websites
 						</a>
 					</li>
 					<hr>
 					<li>
-						<a href="#interactive">
+						<a href="#advertising" onclick="$.scrollTo( '#advertising', 1000, {easing:''} ); CngClass(this);" class="selected">
+							<i class="icon-chevron-right"></i>
+							Advertising
+						</a>
+					</li>
+					<hr>
+					<li>
+						<a href="#interactive" onclick="$.scrollTo( '#interactive', 1000, {easing:''} ); CngClass(this);" class="selected">
 							<i class="icon-chevron-right"></i>
 							Interactive Experiments
 						</a>
 					</li>
 					<hr>
 					<li>
-						<a href="#twoD">
+						<a href="#twoD" onclick="$.scrollTo( '#twoD', 1000, {easing:''} ); CngClass(this);" class="selected">
 							<i class="icon-chevron-right"></i>
 							2D Graphics
 						</a>
 					</li>
 					<hr>
 					<li>
-						<a href="#threeD">
+						<a href="#threeD" onclick="$.scrollTo( '#threeD', 1000, {easing:''} ); CngClass(this);" class="selected">
 							<i class="icon-chevron-right"></i>
 							3D Graphics
 						</a>
 					</li>
 					<hr>
 					<li>
-						<a href="#short">
+						<a href="#short" onclick="$.scrollTo( '#short', 1000, {easing:''} ); CngClass(this);" class="selected">
 							<i class="icon-chevron-right"></i>
 							Short Films
 						</a>
 					</li>
 					<hr>
 					<li>
-						<a href="#group">
+						<a href="#group" onclick="$.scrollTo( '#group', 1000, {easing:''} ); CngClass(this);" class="selected">
 							<i class="icon-chevron-right"></i>
 							Group Projects
 						</a>
@@ -131,13 +138,13 @@
 							<h2>Websites</h2>
 						</div>
 						<ul class="thumbnails">
-							<li class="span6">
+							<li class="span3">
 								<div class="thumbnail">
 									<img src="img/projects/desktop.png" alt="food site">
 								</div>
 								<div class="caption">
 									<h3>
-										<a href="http://foods.rosanna.co.nz/">Food Deconstruction</a>
+										<a href="http://foods.rosanna.co.nz/" target="_blank">Food Deconstruction</a>
 									</h3>
 									<p>
 										A responsive site developed for an university assignment using HTML5 and CSS3.
@@ -148,7 +155,77 @@
 										This is a blog dedicated to show how I go about reconstructing meals that most of us are already familiar with.
 									</p>
 									<p>
-										Visit: <a href="http://foods.rosanna.co.nz/">http://foods.rosanna.co.nz</a>
+										Visit: <a href="http://foods.rosanna.co.nz/" target="_blank">foods.rosanna.co.nz</a>
+									</p>
+								</div>
+							</li>
+							<li class="span3">
+								<div class="thumbnail">
+									<img src="img/projects/vbcblog.png" alt="VBC blog site">
+								</div>
+								<div class="caption">
+									<h3>
+										<a href="http://http://vbcmusicblog.tumblr.com/" target="_blank">VBC Music Blog</a>
+									</h3>
+									<p>
+										A Tumblr blog theme developed for Victoria Broadcasting Club 88.3FM using HTML and CSS.
+									</p>
+									<p>
+										<strong>Site Context:</strong> Initial test-blog yet to go live!
+									</p>
+									<p>
+										Visit: <a href="http://http://vbcmusicblog.tumblr.com/" target="_blank">vbcmusicblog.tumblr.com</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div id="advertising_section">
+			<div class="container">
+				<div class="offset3 span6"
+					<!--Advertising Materials
+						========================================== -->
+					<section id="advertising">
+						<div class="topic">
+							<h2>Advertising and Marketing</h2>
+						</div>
+						<ul class="thumbnails">
+							
+							<li class="span6">
+								<div class="thumbnail">
+									<img src="img/projects/getdone_ad.png" alt="getdone tv ad">
+								</div>
+								<div class="caption">
+									<h3>GetDone Plumbing's TV Ad</h3>
+									<p>
+										I've designed some of the main visual components for the GetDone Plumbing TV ad. 
+									</p>
+								</div>
+							</li>
+							<li class="span6">
+								<div class="thumbnail">
+									<img src="img/projects/getdone_deals.png" alt="getdone website deals">
+								</div>
+								<div class="caption">
+									<h3>GetDone Plumbing's Website Deals</h3>
+									<p>
+										I've designed some deals for the Getdone Plumbing website.
+										See them at <a href="http://www.getdone.co.nz/" target="_blank">www.getdone.co.nz</a>
+									</p>
+								</div>
+							</li>
+							<li class="span6">
+								<div class="thumbnail">
+									<img src="img/projects/getdone_slideshow.png" alt="getdone website slides">
+								</div>
+								<div class="caption">
+									<h3>GetDone Plumbing's Home Page Slide-Show</h3>
+									<p>
+										Minimalistic slides promoting GetDone Plumbing on their home page. I've designed them to convey a story for what the company is all about.
+										See them at <a href="http://www.getdone.co.nz/" target="_blank">www.getdone.co.nz</a>
 									</p>
 								</div>
 							</li>
@@ -207,7 +284,7 @@
 							
 							<li class="span6">
 								<div class="thumbnail">
-									<img src="img/projects/flora.jpg" alt="argia">
+									<img src="img/projects/flora.jpg" alt="Algorithmic Flora">
 								</div>
 								<div class="caption">
 									<h3>Algorithmic Flora</h3>
@@ -220,7 +297,6 @@
 								<div class="thumbnail">
 									<img src="img/projects/flora_combo.png" alt="more-flora">
 								</div>
-
 							</li>
 						</ul>
 					</section>
@@ -247,7 +323,7 @@
 									<p>
 										An environment generated in Maya using Python script.
 										The envrionment is my interpretation of Argia from Italo Calvino's
-										<a href="http://en.wikipedia.org/wiki/Invisible_Cities">Invisible Cities</a>.
+										<a href="http://en.wikipedia.org/wiki/Invisible_Cities" target="blank">Invisible Cities</a>.
 									</p>
 								</div>
 							</li>
@@ -259,9 +335,9 @@
 									<h3>Cyborg of Space</h3>
 									<p>
 										Inspired by
-										<a href="http://en.wikipedia.org/wiki/Patricia_Piccinini">Patricia Piccinini</a>'s
-										projects - <a href="http://www.patriciapiccinini.net/works/03Vespas_2006-2011/">Nest (2006)</a>
-										and <a href="http://www.patriciapiccinini.net/works/05Sculptures_2008-2009/">Foundling (2008)</a>,
+										<a href="http://en.wikipedia.org/wiki/Patricia_Piccinini" target="blank">Patricia Piccinini</a>'s
+										projects - <a href="http://www.patriciapiccinini.net/works/03Vespas_2006-2011/" target="blank">Nest (2006)</a>
+										and <a href="http://www.patriciapiccinini.net/works/05Sculptures_2008-2009/" target="blank">Foundling (2008)</a>,
 										this is a concept to combine human and machine features into a new form.
 									</p>
 								</div>
@@ -295,7 +371,7 @@
 						<ul class="thumbnails">
 							<li class="span6">
 								<div class="video-clips">
-									<iframe src="http://player.vimeo.com/video/47386745?badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/47386745">Tunnel of dreams (2012)</a> from <a href="http://vimeo.com/user4626095">Silver Strawberry</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+									<iframe src="http://player.vimeo.com/video/47386745?badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/47386745" target="blank">Tunnel of dreams (2012)</a> from <a href="http://vimeo.com/user4626095" target="blank">Silver Strawberry</a> on <a href="http://vimeo.com" target="blank">Vimeo</a>.</p>
 								</div>
 								<div class="caption">
 									<h3>Tunnel of Dreams (2012)</h3>
@@ -306,7 +382,7 @@
 							</li>
 							<li class="span6">
 								<div class="video-clips">
-									<iframe src="http://player.vimeo.com/video/25108171?badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/25108171">The Burglary (Better Version)</a> from <a href="http://vimeo.com/user4626095">Silver Strawberry</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+									<iframe src="http://player.vimeo.com/video/25108171?badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/25108171" target="blank">The Burglary (Better Version)</a> from <a href="http://vimeo.com/user4626095" target="blank">Silver Strawberry</a> on <a href="http://vimeo.com" target="blank">Vimeo</a>.</p>
 								</div>
 								<div class="caption">
 									<h3>The Burglary (2011)</h3>
@@ -342,6 +418,8 @@
 										activism against paua poaching in New Zealand. My role in the team was to design
 										visual assets such as the characters, and the main menu.
 									</p>
+									<p> See more of this project in detail at <a href="http://rosefong352.tumblr.com/" target="blank">rosefong352.tumblr.com</a>
+									</p>
 								</div>
 							</li>
 							<li class="span6">
@@ -353,7 +431,9 @@
 									<p>
 										A stealth action killer game developed by George Cooke, Dillon Sue, Zhou Fang, Chris Mather, and myself.
 
-										My role consited of designing, modelling, and animating the characters for this 3D game.
+										My role consisted of designing, modelling, and animating the characters for this 3D game.
+									</p>
+									<p> See more of this project in detail at <a href="http://rosefong343.tumblr.com/" target="blank">rosefong343.tumblr.com</a>
 									</p>
 								</div>
 							</li>
@@ -375,5 +455,11 @@
 		</footer>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$('#side_menu').scrollspy();
+			$('[data-spy="scroll"]').each(function () {
+			  var $spy = $(this).scrollspy('refresh')
+			});
+		</script>
 	</body>
 </html>

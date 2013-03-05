@@ -212,7 +212,7 @@ footer p {
   margin-top: -74px;
 }
 
-#websites_section, #twoD_section, #animation_section {
+#websites_section, #interactive_section, #threeD_section, #group_section {
   padding-bottom: 50px;
   background-image: url('../img/retro_intro.png');
 }
@@ -221,7 +221,7 @@ footer p {
   margin-top: -1px;
 }
 
-#interactive_section, #threeD_section, #group_section {
+#advertising_section, #twoD_section, #animation_section {
   padding-bottom: 50px;
   background-image: url('../img/billie_holiday.png');
 }
@@ -275,7 +275,7 @@ footer p {
 
 #side_menu ul{
   margin-top: 50px;
-  background: rgb(255, 255, 255);
+  background: rgb(255,255,255);
   background: rgba(255, 255, 255, 0.6);
   border-style: solid;
   border-color: #5e5e5e;
@@ -288,6 +288,11 @@ footer p {
 #logo {
   max-width: 45px;
   max-height: 45px;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover  {
+  background-color: #2d2d2d;
+  color: #C1DBE3;
 }
 
 /*============================================================================================================
@@ -333,6 +338,10 @@ Tablets*/
 
   .caption h3{
     font-size: 12pt;
+  }
+
+  .nav-pills > .active > a, .nav-pills > .active > a:hover  {
+    background-color: #000;
   }
 }
 
