@@ -163,13 +163,28 @@
 				<p class="span12">
 					&copy; 2013 Rosanna Fong 
 					| Wellington, New Zealand 
-					| Email: contact@rosanna.co.nz
-					| <a href="http://www.linkedin.com/pub/rosanna-fong/37/ab6/201">
-					<img src="img/linkedin.png"></a>
+                    | <span class="info">Email: contact[at]rosanna[dot]co[dot]nz</span>
+					|
+                    <a href="http://www.linkedin.com/pub/rosanna-fong/37/ab6/201">
+                        <img src="img/linkedin.png">
+                    </a>
 				</p>
 			</div>
 		</footer>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $info = $('footer .info');
+                var dotRegex = new RegExp('\\[dot\\]','g');
+                var atRegex = new RegExp('\\[at\\]','g');
+
+                var betterText = $info.text()
+                    .replace(dotRegex, '.')
+                    .replace(atRegex, '@')
+                ;
+                $info.text( betterText );
+            });
+        </script>
 	</body>
 </html>
