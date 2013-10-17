@@ -3,10 +3,6 @@
   <head>
     <title>Rosanna's homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Rosanna Fong's design portfolio - A website about a nifty media designer based in Wellington.">
-    <meta name="keywords" content="HTML,CSS,JavaScript, web design, Twitter Bootstrap, JQuery, design, media, media design, Wellington, New Zealand">
-    <meta name="author" content="Rosanna Fong">
-    <meta charset="UTF-8">
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="my_stylesheet.css" rel="stylesheet">
@@ -28,14 +24,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a id="logo" class="navbar-brand" href="index.html"><em>rosanna</em>&#8226;design</a>
+            <a id="logo" class="navbar-brand" href="#"><em>rosanna</em>&#8226;design</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="index.html"><img class="nav-icons" src="images/home_icon.png"/></a></li>
               <li><a href="portfolio.html"><img class="nav-icons" src="images/portfolio_icon.png"/></a></li>
               <li><a href="about.html"><img class="nav-icons" src="images/about_icon.png"/></a></li>
-              <li><a href="mailto:contact@rosanna.co.nz" target="_blank"><img class="nav-icons" src="images/contact_icon.png"/></a></li>
+              <li><a href="#"><img class="nav-icons" src="images/contact_icon.png"/></a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -46,7 +42,8 @@
           ================================================== -->
         <div id="my-carousel" class="carousel slide">
           <!-- Indicators -->
-          <ol class="carousel-indicators">  
+          
+          <ol class="carousel-indicators">
             <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#my-carousel" data-slide-to="1"></li>
             <li data-target="#my-carousel" data-slide-to="2"></li>
@@ -70,17 +67,15 @@
             <div class="item slide slide2">
               <div class="container">
                 <div class="jumbotron">
-                  <div class="col-md-5">
-                    <h1 class="text-left"><em>An eye for design.</em></h1>
-                    <p>
-                      See some of my work in my 
-                      <a href="portfolio.html">portfolio.</a>
+                  <div class="col-md-8">
+                    <h1 class="text-left"><em>That's Manfred</em></h1>
+                    <p class="statement-text text-left"><em>he's one of my creations</em></p>
+                      See more of my work in my 
+                      <a href="#">portfolio.</a>
                     </p>
                   </div>
-                  <div class="col-md-7">
-                    <p>
-                      <img src="images/eye_mac_air.png" class="img-responsive" alt="my-vision"/>
-                    </p>
+                  <div class="col-md-4">
+                    <p><img src="images/manfred.png" alt="manfred"/></p>
                   </div>
                 </div>
               </div>
@@ -111,7 +106,7 @@
                       <li>I have lots of creative ideas.</li>
                       <li>I can bake you delicious cakes and biscuits.</li>
                     </ul>
-                    <a href="about.html"><h2><em>Find out more</em></h2></a>
+                    <a href="#"><h2><em>Find out more</em></h2></a>
                     <p>About my educational background and skills.</p>
                   </div>
                 </div>
@@ -122,7 +117,7 @@
                 <div class="jumbotron">
                   <div class="col-md-4">
                     <a href="portfolio.html" class="my-thumbnail thumbnail">
-                      <img src="images/portfolio_icon_larger.png" class="img-responsive" alt="portfolio-icon-larger">
+                      <img src="images/portfolio_icon_larger.png" alt="portfolio-icon-larger">
                       <div class="caption">
                         <h4 class="text-center">PORTFOLIO</h4>
                         <p class="text-center">Showcasing my best work.</p>
@@ -131,7 +126,7 @@
                   </div>
                   <div class="col-md-4">
                     <a href="about.html" class="my-thumbnail thumbnail">
-                      <img src="images/about_icon_larger.png" class="img-responsive" alt="about-icon-larger">
+                      <img src="images/about_icon_larger.png" alt="about-icon-larger">
                       <div class="caption">
                         <h4 class="text-center">ABOUT</h4>
                         <p class="text-center">Find out about me.</p>
@@ -139,8 +134,8 @@
                     </a>
                   </div>
                   <div class="col-md-4">
-                    <a href="mailto:contact@rosanna.co.nz" target="_blank" class="my-thumbnail thumbnail">
-                      <img src="images/contact_icon_larger.png" class="img-responsive" alt="contact-icon-larger">
+                    <a href="#" class="my-thumbnail thumbnail">
+                      <img src="images/contact_icon_larger.png" alt="contact-icon-larger">
                       <div class="caption">
                         <h4 class="text-center">CONTACT</h4>
                         <p class="text-center">Send me a message.</p>
@@ -165,7 +160,7 @@
             </p>
           </div>
           <div class="col-md-4">
-              <a href="about.html" class="text-center thumbnail"><img src="images/cutout_self2.png" class="img-responsive" alt"my-image"/></a>
+              <a href="about.html" class="text-center"><img src="images/cutout_self2.png" alt"my-image"/></a>
           </div>
           <div class="col-md-4">
             <h3 class="text-center">That&#146;s me in that picture.</h3>
@@ -174,65 +169,54 @@
             </a></p>
             <p class="text-center">
               Why don't we
-              <a class="dark-link" href="mailto:contact@rosanna.co.nz" target="_blank">get in touch!</a>
+              <a class="dark-link" href="#">get in touch!</a>
             </p>
           </div>
         </div>
+        <div id="main-content-bg" class="container">
+          <!--space to show background image.-->
+        </div>
       </div> <!-- /container -->
-      <div id="main-content-bg" class="container">
-      </div>
     </div>
     <div class="push">
     </div>
-    <div id="footer">
+    <footer>
       <div class="container">
         <div class="col-md-8">
             <p class="bottom-nav text-left">
-              <a href="index.html">HOME</a>  |  
-              <a href="portfolio.html">PORTFOLIO</a>  |  
-              <a href="about.html">ABOUT</a>  |  
-              <a href="mailto:contact@rosanna.co.nz" target="_blank">CONTACT</a>
+              <a href="#">HOME</a>  |  
+              <a href="#">PORTFOLIO</a>  |  
+              <a href="#">ABOUT</a>  |  
+              <a href="#">CONTACT</a>
             <p>
             <p class="text-left">
               This site was built using 
-              <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>, 
+              <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, 
               CSS3, and 
-              <a href="http://jquery.com/" target="_blank">jQuery</a>. Best viewed using 
-              <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Chrome</a>, 
-              <a href="https://www.apple.com/nz/safari/" target="_blank">Safari</a>, or 
-              <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>.
+              <a href="http://jquery.com/">jQuery</a>. Best viewed using 
+              <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, 
+              <a href="https://www.apple.com/nz/safari/">Safari</a>, or 
+              <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a>.
             </p>
         </div>
         <div class="col-md-4">
-          <p><a class="linkedin-pic text-center" href="http://www.linkedin.com/pub/rosanna-fong/37/ab6/201" target="_blank">
+          <p class="linkedin-pic text-center">
             <img src="images/linkedin.png" alt="linkedin-button"/>
-            </a>
-            <a href="#">
-             <button type="button" class="btn btn-primary back-to-top">Back to Top</button>
-            </a>
           </p>
-          <p class="text-right">Copyright &#169; 2013 Rosanna Fong. All Rights Reserved. </p>
+          <p class="text-center">Copyright &#169; 2013 Rosanna Fong. All Rights Reserved. </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="dist/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-      $('.carousel').carousel({
-        interval: 8000
-      })
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('.back-to-top').click(function(){
-        $("html, body").animate({scrollTop: 0}, 800);
-        return false;
+  
+    <!--script type="text/javascript">
+      $(document).ready( function scrollWindow(){
+        window.scrollTo(0,0);
       });
-    });
-    </script>
+    </script!-->
     </body>
 </html>
