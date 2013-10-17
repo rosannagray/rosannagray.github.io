@@ -190,6 +190,14 @@
         $("html, body").animate({scrollTop: 0}, 800);
         return false;
       });
+
+      var $document = $(this);
+      var $manifesto = $('#manifesto');
+
+      var i = 0;
+      setInterval(function() {
+        $manifesto.css('background-position', ++i + 'px');
+      },100)
     });
     </script>
     </body>
