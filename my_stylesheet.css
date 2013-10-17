@@ -311,27 +311,27 @@ body {
 	}
 }
 @media(min-width:768px){
-	#my-carousel, #my-header.container .jumbotron {
-		height: auto;
-	}
+
 }
 @media(min-width:992px){
-	#my-carousel, #my-header.container .jumbotron {
-		height: auto;
-	}
+
 }
 @media(min-width:1200px){
-	#my-carousel, #my-header.container .jumbotron {
-		height: auto;
-	}
+
 }
 @media(max-width: 320px){
 	.left-col .label, .right-col .label {
 		display: none;
 	}
+	#my-carousel, #my-header.container .jumbotron {
+		height: auto;
+	}
 }
 @media(min-width: 321px) and (max-width: 480px) {
 	.left-col .label, .right-col .label {
 		display: none;
+	}
+	#my-carousel, #my-header.container .jumbotron {
+		height: auto;
 	}
 }
