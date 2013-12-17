@@ -175,7 +175,7 @@ body {
 	padding: 0;
 }
 
-#web-branding-logos .thumbnail, #print-graphic-design .thumbnail {
+#web-branding-logos .thumbnail, #print-graphic-design .thumbnail, #threeD-videos-interactive .thumbnail {
 	padding: 5px 0;
 	background: transparent;
 	border: none;
@@ -295,8 +295,8 @@ body {
     border: none;
 }
 @media(max-width:767px){
-	#my-carousel, #my-header.container .jumbotron {
-		height: auto;
+	#my-carousel {
+		display: none;
 	}
 	#my-header .slide1 h1 {
 		font-size: 2em;
@@ -310,8 +310,10 @@ body {
 		font-size: 1em;
 	}
 }
-@media(min-width:768px){
-
+@media(min-width:768px) and (max-width: 992px){
+	#my-carousel {
+		display: none;
+	}
 }
 @media(min-width:992px){
 
@@ -320,18 +322,19 @@ body {
 
 }
 @media(max-width: 320px){
-	.left-col .label, .right-col .label {
+	.left-col .label, .right-col .label, #my-carousel {
 		display: none;
 	}
-	#my-carousel, #my-header.container .jumbotron {
-		height: auto;
+
+	#main-content, .about-header {
+		padding-top: 15px;
 	}
 }
 @media(min-width: 321px) and (max-width: 480px) {
-	.left-col .label, .right-col .label {
+	.left-col .label, .right-col .label, #my-carousel {
 		display: none;
 	}
-	#my-carousel, #my-header.container .jumbotron {
-		height: auto;
+	#main-content, .about-header {
+		padding-top: 10px;
 	}
 }
