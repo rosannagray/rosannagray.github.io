@@ -1,0 +1,867 @@
+/*Colours
+=======================================================================================================================
+*/
+$pink: #e05d6e;
+$light-pink: #ff8597;
+$primary-colour: #505050;
+$hover-colour: #bf4f5e;
+$light-green: #e3e5da;
+$light-grey: #dfdfdf;
+$grey: #cccccc;
+$white: #ffffff;
+
+/*Fonts
+=======================================================================================================================
+*/
+$font-stack: Carrois Gothic Regular, sans-serif;
+$paragraph-font-size: 1em;
+$page-heading-font-size: 1.5em;
+$heading-font-size: 2em;
+
+/*Breakpoints
+=======================================================================================================================
+*/
+$break-xs: 320px; /* Extra small devices (mobile devices, 320px and up) */
+$break-small: 768px; /* Small devices (tablets, 768px and up) */
+$break-medium: 992px; /* Medium devices (desktops, 992px and up) */
+$break-large: 1200px; /* Large devices (large desktops, 1200px and up) */
+
+/*Mixins
+=======================================================================================================================
+*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($horizontal, $vertical, $blur, $colour) {
+  -webkit-box-shadow: $horizontal $vertical $blur $colour;
+  -moz-box-shadow: $horizontal $vertical $blur $colour;
+  box-shadow: $horizontal $vertical $blur $colour;
+}
+
+@mixin opacity($opacity-value) {
+	-webkit-opacity: $opacity-value;
+	-moz-opacity: $opacity-value;
+	-khtml-opacity: $opacity-value;
+	opacity: $opacity-value;
+}
+
+@mixin ie-opacity($alpha-value) {
+	width: 100%;
+	zoom: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$alpha-value)";
+	filter: alpha(opacity=$alpha-value);
+}
+/*
+=======================================================================================================================
+*/
+
+body {
+	font-family: $font-stack;
+	color: $primary-colour;
+	background-color: $white;
+
+	@media screen and (min-width: $break-large) {
+		background: transparent url('../images/groovepaper.png') repeat;
+		hr {
+			display: none;
+		}
+	}
+	a {
+		text-decoration: underline;
+		color: $pink;
+	}
+	a:hover {
+		color: $hover-colour;
+	}
+}
+
+header {
+	background-color: $light-green;
+
+	@media screen and (min-width: $break-small) and (max-width: $break-large) {
+		background: transparent url('../images/zigzag.png') repeat;
+	}
+
+	@media screen and (min-width: $break-medium) and (max-width: $break-large) {
+		background: transparent url('../images/zigzag.png') repeat;
+	}
+
+	@media screen and (min-width: $break-large) {
+		background-color: $primary-colour;
+		margin: 0;
+	}
+
+	.brand-name {
+		color: $primary-colour;
+		font-size: $heading-font-size;
+		float:right;
+		font-weight: bold;
+		@media screen and (min-width: $break-large) {
+			float: left;
+			color: $light-green;
+			font-size: 3em;
+		}
+		@media screen and (min-width: $break-medium) {
+			color: $light-grey;
+		}
+		@media screen and (min-width: $break-small) {
+			color: $light-grey;
+		}
+	}
+	.logo {
+		float: left;
+		margin-left: -1em;
+	}
+	
+	.site-navbar {
+		background-color: $primary-colour;
+		padding: 0;
+		margin: 0;
+		.site-nav {
+			li {
+				@media screen and (min-width: $break-large) {
+					float:left;
+					left: 0;
+				}
+			}
+			@media screen and (min-width: $break-large) {
+				float: right;
+				right: 0;
+			}
+		}
+		@media screen and (min-width: $break-large) {
+			margin-top: 1em;
+		}
+	}
+}
+
+header:after {
+	content: '';
+	position: relative;
+	border-style: solid;
+	border-width: 1.5em 1.5em 0;
+	border-color: $primary-colour transparent;
+	display: none;
+	width: 0;
+	z-index: 1;
+	bottom: -1.5em;
+	margin: 0 auto;
+	@media screen and (min-width: $break-large) {
+		display: block;
+	}
+}
+
+section {
+	padding: 1em 0.5em 3em 0.5em;
+	@media screen and (min-width: $break-large) {
+		padding: 1em 1em 3em 1em;
+	}
+}
+
+.section-title {
+	padding: 0.5em;
+	color: $white;
+	@include border-radius(2px);
+	background-color: $pink;
+	@media screen and (min-width: $break-large) {
+		padding: 0.5em;
+		margin: 1em 0;
+		font-size: 2em;
+		text-decoration: underline;
+		color: $primary-colour;
+		background: none;
+	}
+}
+
+.section-title-inverse {
+	@extend .section-title;
+	background-color: $primary-colour;
+	@media screen and (min-width: $break-large) {
+		background: none;
+	}
+}
+
+hr {
+	border-top: 0.1em dashed $grey;
+	margin: 0.1em 0;
+}
+.site-navbar {
+	background-color: $primary-colour;
+	padding: 0;
+	margin: 0;
+}
+
+.site-nav {
+	list-style: none;
+	padding: 0;
+	@media screen and (min-width: $break-large) {
+		padding-left: 0;
+	}
+	.active {
+		background-image: none;
+		color: $grey;
+	}
+}
+.site-nav-btn {
+	background: $pink;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8597', endColorstr='#e05d6e'); /* for IE */
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, $light-pink), color-stop(1, $pink) );
+	background:-moz-linear-gradient( center top, $light-pink 5%, $pink 100% );
+	@include border-radius(2px);
+	border:1px solid $primary-colour;
+	display:inline-block;
+	color:$white;
+	height:50px;
+	width:75px;
+	text-decoration:none;
+	text-align:center;
+	float:left;
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 1em 0.25em;
+	line-height: 1.428571429;
+}
+
+.site-nav-btn:hover {
+	text-decoration: none;
+}
+
+.intro-section {
+	padding-top: 1em;
+	background: transparent url('../images/groovepaper.png') repeat;
+}
+
+.about-section {
+	@media screen and (min-width: $break-large) {
+		background-color: $white;
+		padding-bottom: 0;
+	}
+	.grey-snippet {
+		background: none;
+		@media screen and (min-width: $break-large) {
+			margin-bottom: 0;
+		}
+	}
+
+	.description {
+		@media screen and (min-width: $break-large) {
+			float: right;
+			right: 0;
+		}
+	}
+}
+
+.skills-section {
+	background-color: $pink;
+}
+
+.jarhead {
+	background: transparent url('../images/pngs/jarhead-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/jarhead.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/jarhead.svg');
+	height: 320px;
+	padding: 1em;
+	margin: 0 auto;
+	text-align: center;
+	@media screen and (min-width: $break-large) {
+		text-align: right;
+		float: right;
+		right: 0;
+		background: transparent url('../images/pngs/jarhead-fallback.png') right center no-repeat;
+	}
+}
+
+.bubble {
+	margin: 0 auto;
+	position: relative;
+	background: #dfdfdf;
+	padding: 0.5em;
+	text-align: center;
+	@include border-radius(5px);
+	h4 {
+		line-height: 1.5em;
+		@media screen and (min-width: $break-large) {
+			font-size: 2.5em;
+		}
+		@media screen and (min-width: $break-medium) {
+			font-size: 2em;
+		}
+	}
+	@media screen and (min-width: $break-large) {
+		background: none;
+		text-align: left;
+		margin: 0;
+	}
+
+	@media screen and (min-width: $break-medium) {
+		background: none;
+		text-align: left;
+		margin: 0;
+	}
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 0;
+	border-color: #dfdfdf transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -15px;
+	bottom: -15px;
+	left: 50%;
+
+	@media screen and (min-width: $break-large) {
+		display: none;
+	}
+	@media screen and (min-width: $break-medium) {
+		display: none;
+	}
+}
+
+.image-block {
+	margin: 0 auto;
+	padding: 2em 0;
+	text-align: center;
+
+	p {
+		@media screen and (min-width: $break-large) {
+			@include border-radius(4px);
+			padding: 1em;
+			background-color: $light-green;
+			border: $white solid 0.2em;
+		}
+		@media screen and (min-width: $break-medium) {
+			@include border-radius(4px);
+			padding: 1em;
+			background-color: $light-grey;
+			border: $white solid 0.2em;
+		}
+	}
+
+	.thumbnail {
+		@media screen and (min-width: $break-large) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.highlight-section {
+	background-color: $pink;
+	.section-title {
+		color: $white;
+	}
+	.featured-project-image {
+		padding: 1em 0;
+
+		@media screen and (min-width: $break-small) {
+			margin: 1em;
+		}
+
+		@media screen and (min-width: $break-medium) {
+			margin: 0;
+		}
+
+		@media screen and (min-width: $break-large) {
+			margin: 0;
+		}
+
+		.image {
+			padding: 2em;;
+		}
+	}
+}
+
+.site-btn {
+	background-color: $pink;
+	color: $white;
+	padding: 1em;
+	border: none;
+	@include box-shadow(1px, 1px, 1px, $primary-colour);
+	text-decoration: none;
+}
+
+.site-btn:hover {
+	text-decoration: none;
+	color: $primary-colour;
+}
+
+.site-btn-inverse {
+	@extend .site-btn;
+	background-color: $primary-colour;
+}
+
+.site-btn-inverse:hover {
+	color: $pink;
+}
+
+.expand {
+	padding: 1em 0;
+	@media screen and (min-width: $break-large) {
+		float: right;
+	}
+}
+
+.featured-project-description {
+	background: transparent url('../images/groovepaper.png') repeat;
+	@include border-radius(4px);
+	border-style: dotted;
+	padding: 1em;
+
+	@media screen and (min-width: $break-large) {
+		border: none;
+	}
+}
+
+.self-promo-section {
+	@media screen and (min-width: $break-large) {
+		background-color: $light-green;
+	}
+
+	.grey-snippet {
+		@media screen and (min-width: $break-medium) {
+			height: 24.5em;
+		}
+	}
+}
+
+.personal-interests-section {
+	@media screen and (min-width: $break-large) {
+		background: transparent url('../images/groovepaper.png') repeat;
+	}
+
+	@media screen and (min-width: $break-medium) {
+		background: transparent url('../images/groovepaper.png') repeat;
+	}
+	h4 {
+		padding: 0.5em 0;
+	}
+}
+.snippet {
+	@include border-radius(4px);
+	padding: 1em 1.5em 0 0;
+	margin: 0.5em 0;
+	@media screen and (min-width: $break-large) {
+		@include border-radius(0);
+	}
+
+	hr {
+		border: 0.5em solid $light-green;
+		margin: 0.15em 3em 0 0;
+	}
+
+	.icon-text-heading {
+		padding: 0.5em 0 0 0.5em;
+
+		h3 {
+			padding-left: 0.5em;
+		}
+		@media screen and (min-width: $break-large) {
+			padding: 0;
+		}
+	}
+
+	.icon {
+		padding: 0 1em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		padding-left: 1em;
+	}
+
+	.description {
+		padding: 0 1em 1em 2em;
+		margin-top: 0;
+
+		@media screen and (min-width: $break-large) {
+			padding: 0.5em 0;
+		}
+
+
+		p {
+			margin: 0 0 1em 0;
+
+			@media screen and (min-width: $break-large) {
+				padding: 0.5em 0;
+			}
+		}
+	}
+}
+
+.snippet:hover {
+	hr {
+		border: 0.5em solid $pink;
+	}
+}
+
+.grey-snippet {
+	@extend .snippet;
+	background-color: $light-grey;
+	border: $white solid 0.5em;
+
+	@media screen and (min-width: $break-large) {
+		border: none;
+		background-color: $light-green;
+	}
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 1em;
+	height: 0;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.social-media-section {
+	background-color: $light-green;
+	padding: 1em 0.5em;
+	@media screen and (min-width: $break-large) {
+		background: transparent url('../images/zigzag.png') repeat;
+		padding: 1em 0;
+	}
+
+	.social-media-icons {
+		padding: 0.5em 0.5em 0 0;
+	}
+	.social-media-list {
+		padding: 0;
+		li {
+			display: inline;
+			list-style-type: none;
+			margin-left: 0;
+			margin-right: 1em;
+			float: left;
+			left: 0;
+		}
+	}
+
+	.brand-icon {
+		width: 32px;
+		height:32px;
+		cursor: pointer;
+	}
+
+	.invisible-layer {
+		display: block;
+		@extend .brand-icon;
+		position: absolute;
+	}
+
+	.linkedin-icon {
+		background: transparent url('../images/icons/linkedin-grey-small.png') no-repeat;
+	}
+
+	.linkedin-icon:hover {
+		background: transparent url('../images/icons/linkedin-blue-small.png') no-repeat;
+	}
+
+	.twitter-icon {
+		background: transparent url('../images/icons/twitter-grey-small.png') no-repeat;
+	}
+
+	.twitter-icon:hover {
+		background: transparent url('../images/icons/twitter-blue-small.png') no-repeat;
+	}
+
+	.vimeo-icon {
+		background: transparent url('../images/icons/vimeo-grey-small.png') no-repeat;
+	}
+
+	.vimeo-icon:hover {
+		background: transparent url('../images/icons/vimeo-blue-small.png') no-repeat;
+	}
+
+	.email-icon {
+		background: transparent url('../images/icons/email-grey-small.png') no-repeat;
+	}
+
+	.email-icon:hover {
+		background: transparent url('../images/icons/email-pink-small.png') no-repeat;
+	}
+
+	.up-button-area {
+		padding-right: 0;
+	}
+	.up-button {
+		float: right;
+		right: 0;
+		@extend .site-btn;
+		@include box-shadow(1px, 1px, 1px, $primary-colour);
+		background-color: $light-grey;
+		color: $primary-colour;
+
+		@media screen and (min-width: $break-small) {
+			background-color: $primary-colour;
+			color: white;
+		}
+	}
+
+	.up-button:hover {
+		color: $pink;
+	}
+
+	.icon {
+		@include box-shadow(1px, 1px, 1px, $primary-colour);
+	}
+}
+
+.graph-snippet {
+	padding-bottom: 2em;
+}
+
+.software-graph {
+	h4 {
+		padding-bottom: 1.2em;
+	}
+}
+.graph {
+	padding: 0.5em 0;
+}
+
+.graph-title {
+	color: $light-green;
+}
+
+.project-heading {
+	padding-left: 0;
+	@media screen and (min-width: $break-large) {
+		padding-left: 0;
+		h4 {
+			font-size: 2em;
+		}
+	}
+}
+.project-thumb {
+	background-color: $light-green;
+	border: $grey solid 1px;
+	.caption {
+		background-color: $primary-colour;
+		color: $white;
+		padding-bottom: 2.5em;
+
+		@media screen and (min-width: $break-small) {
+			height: 6em;
+		}
+	}
+}
+
+.project-thumb:hover {
+	text-decoration: none;
+}
+
+.project-intro-section {
+	@media screen and (min-width: $break-large) {
+		background: $pink url('../images/watson.png') right no-repeat;
+		padding-bottom: 1em;
+		.section-title {
+			color: $white;
+		}
+		p {
+			font-size: 1.5em;
+			padding-top: 2em;
+			text-align: right;
+			color: $light-green;
+		}
+	}
+}
+
+.project-expand-button {
+	@extend .site-nav-btn;
+	@include border-radius(4px);
+	float: right;
+	right: 0;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 0.25em;
+	margin-top: 0.5em;
+
+	@media screen and (min-width: $break-small) {
+		position: absolute;
+		bottom: 1.5em;
+		right: 1em;
+	}
+}
+
+.overlay-image {
+	.thumbnail {
+		padding: 0.1em;
+	}
+	@media screen and (min-width: $break-large) {
+	    @include opacity(0.5);
+	}
+}
+
+.overlay-image:hover {
+	@media screen and (min-width: $break-large) {
+	    @include opacity(1);
+	    transition: opacity ease-in-out;
+	    -moz-transition: opacity ease-in-out;
+	    -webkit-transition: opacity ease-in-out;
+	}
+}
+
+.project-context-section {
+	.project-container {
+		padding: 1em;
+		@include border-radius(4px);
+		background-color: $light-green;
+		margin-bottom: 1em;
+
+		@media screen and (min-width: $break-large) {
+			padding: 0;
+			background: none;
+		}
+	}
+}
+
+
+.project-header-section {
+	background: transparent url('../images/zigzag.png') repeat;
+	color: $light-grey;
+
+	.back-button {
+		@extend .up-button;
+		background-color: $light-grey;
+		color: $primary-colour;
+		vertical-align: middle;
+		bottom: 0;
+		float: right;
+	}
+	.back-button:hover {
+		color: $hover-colour;
+	}
+}
+
+.project-section {
+	@media screen and (min-width: $break-large) {
+		.section-title {
+			font-size: 1.5em;
+			color: $primary-colour;
+			text-align: center;
+			text-decoration: none;
+			padding-left: 0;
+			border-top: 0.1em dotted $pink;
+			border-bottom: 0.1em dotted $pink;
+		}
+	}
+}
+
+.project-context-section {
+	background-color: $white;
+	padding: 1em 1em;
+	@media screen and (min-width: $break-large) {
+		padding: 2em 0 8em 0;
+	}
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.letterhead {
+	font-family: 'Black Ops One', cursive;
+	font-size: 3em;
+	font-style: normal;
+}
+
+.manifesto-point {
+	margin-bottom: 0;
+}
+
+.manifesto-snippet {
+	margin-top: 0;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.push {
+	height: 1em;
+	@media screen and (min-width: $break-large) {
+		background-color: $pink;
+	}
+}
+
+footer {
+	background: transparent url('../images/zigzag.png') repeat;
+	@media screen and (min-width: $break-large) {
+		background-image: none;
+		background-color: $primary-colour;
+	}
+	.author-note {
+		text-align: center;
+		padding: 0.25em;
+		color: $white;
+		@media screen and (min-width: $break-large) {
+			text-align: right;
+			padding: 0.25em 0;
+		}
+	}
+	.site-navbar {
+		@media screen and (min-width: $break-large) {
+			background: none;
+			margin: 0;
+			.site-nav {
+				.active {
+					color: $pink;
+				}
+			}
+		}
+	}
+	.site-nav-btn {
+		@media screen and (min-width: $break-large) {
+			border: none;
+			background: none;
+			text-decoration: underline;
+			color: $light-green;
+			padding: 0;
+			text-align: left;
+		}
+	}
+	.site-nav-btn:hover {
+		@media screen and (min-width: $break-large) {
+			text-decoration: underline;
+			color: $pink;
+		}
+	}
+}
+
+footer:before {
+	content: "";
+	position: relative;
+	top: -1em;
+	margin: 0 auto 0 auto;
+	border-style: solid;
+	border-width: 0 1em 1em;
+	border-color: $primary-colour transparent;
+	display: none;
+	width: 0;
+	z-index: 1;
+
+	@media screen and (min-width: $break-large) {
+		display: block;
+	}
+}
+

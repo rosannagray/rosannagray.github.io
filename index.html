@@ -1,238 +1,231 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rosanna's homepage</title>
+    <meta charset="utf-8">
+    <title>Rosanna Fong: Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Rosanna Fong's design portfolio - A website about a nifty media designer based in Wellington.">
-    <meta name="keywords" content="HTML,CSS,JavaScript, web design, Twitter Bootstrap, JQuery, design, media, media design, Wellington, New Zealand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Rosanna Fong">
-    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to Rosanna Fong's Design Portfolio. Find out about Rosanna Fong. Explore some of Rosanna Fong's projects. Visit Rosanna Fong's blog.">
+    <meta name="keywords" content="portfolio, design, web design, graphic design, Rosanna Fong, home, about, creative, projects, skills">
     <!-- Bootstrap -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="my_stylesheet.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my-styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div id="wrap">
-      <!-- Fixed navbar -->
-      <div id="top-nav" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id="logo" class="navbar-brand" href="index.html"><em>rosanna</em>&#8226;design</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html"><img class="nav-icons" src="images/home_icon.png"/></a></li>
-              <li><a href="portfolio.html"><img class="nav-icons" src="images/portfolio_icon.png"/></a></li>
-              <li><a href="about.html"><img class="nav-icons" src="images/about_icon.png"/></a></li>
-              <li><a href="mailto:contact@rosanna.co.nz" target="_blank"><img class="nav-icons" src="images/contact_icon.png"/></a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-
-      <div id="my-header" class="container">
-              <!-- Carousel
-          ================================================== -->
-        <div id="my-carousel" class="carousel slide">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">  
-            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#my-carousel" data-slide-to="1"></li>
-            <li data-target="#my-carousel" data-slide-to="2"></li>
-            <li data-target="#my-carousel" data-slide-to="3"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active slide1">
-              <div class="container">
-                <div class="jumbotron">
-                  <h1 class="text-center">Welcome</h1>
-                  <p class="text-center">to</p>
-                  <p class="text-center">ROSANNA DESIGN</p>
-                  <p class="subtext text-center">
-                    I design websites, and other media.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item slide slide2">
-              <div class="container">
-                <div class="jumbotron">
-                  <div class="col-md-5">
-                    <h1 class="text-left"><em>An eye for design.</em></h1>
-                    <p>
-                      See some of my work in my 
-                      <a href="portfolio.html">portfolio.</a>
-                    </p>
-                  </div>
-                  <div class="col-md-7">
-                    <p>
-                      <img src="images/eye_mac_air.png" class="img-responsive" alt="my-vision"/>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item slide slide3">
-              <div class="container">
-                <div class="jumbotron">
-                  <div class="col-md-6">
-                    <h4 class="text-left">What I can do</h4>
-                    <ul class="self-advert text-left">
-                      <li>Front End Development (HTML/CSS/JavaScript).</li>
-                      <li>Content layout, font and colour selection.</li>
-                      <li>Design a website using Information Architecture.</li>
-                      <li>Use SEO strategies to optimise websites.</li>
-                      <li>Create marketing content for web and television.</li>
-                      <li>Print work including brochures and businesscards.</li>
-                      <li>Graphic design and illustrations.</li>
-                      <li>Video production.</li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6">
-                    <h4 class="text-left">A little bit about me</h4>
-                    <ul class="self-advert text-left">
-                      <li>I&#146;m a keen designer.</li>
-                      <li>I like learning new skills.</li>
-                      <li>I like a challenge.</li>
-                      <li>I&#146;m a little bit quirky.</li>
-                      <li>I have lots of creative ideas.</li>
-                      <li>I can bake you delicious cakes and biscuits.</li>
-                    </ul>
-                    <a href="about.html"><h2><em>Find out more</em></h2></a>
-                    <p>About my educational background and skills.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item slide slide4">
-              <div class="container">
-                <div class="jumbotron">
-                  <div class="col-md-4">
-                    <a href="portfolio.html" class="my-thumbnail thumbnail">
-                      <img src="images/portfolio_icon_larger.png" class="img-responsive" alt="portfolio-icon-larger">
-                      <div class="caption">
-                        <h4 class="text-center">PORTFOLIO</h4>
-                        <p class="text-center">Showcasing my best work.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-4">
-                    <a href="about.html" class="my-thumbnail thumbnail">
-                      <img src="images/about_icon_larger.png" class="img-responsive" alt="about-icon-larger">
-                      <div class="caption">
-                        <h4 class="text-center">ABOUT</h4>
-                        <p class="text-center">Find out about me.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-4">
-                    <a href="mailto:contact@rosanna.co.nz" target="_blank" class="my-thumbnail thumbnail">
-                      <img src="images/contact_icon_larger.png" class="img-responsive" alt="contact-icon-larger">
-                      <div class="caption">
-                        <h4 class="text-center">CONTACT</h4>
-                        <p class="text-center">Send me a message.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="left carousel-control" href="#my-carousel" data-slide="prev"><span class="icon-prev"></span></a>
-          <a class="right carousel-control" href="#my-carousel" data-slide="next"><span class="icon-next"></span></a>
-        </div>
-      </div>
-
-      <div id="main-content" class="container">
-        <div class="container">
-          <div class="col-md-4">
-            <h3 class="text-center">ABOUT ME</h3>
-            <p class="text-center">
-              I am Rosanna Fong, a media designer specialising in web design. I&#146;m from New Zealand and love all things kiwi!
-            </p>
-          </div>
-          <div class="col-md-4">
-              <a href="about.html" class="text-center thumbnail"><img src="images/cutout_self2.png" class="img-responsive" alt"my-image"/></a>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-center">That&#146;s me in that picture.</h3>
-            <p class="text-center"><a class="dark-link" href="about.html">
-              Find out more about me.
-            </a></p>
-            <p class="text-center">
-              Why don't we
-              <a class="dark-link" href="mailto:contact@rosanna.co.nz" target="_blank">get in touch!</a>
-            </p>
-          </div>
-        </div>
-      </div> <!-- /container -->
-      <div id="main-content-bg" class="container">
-      </div>
-    </div>
-    <div class="push">
-    </div>
-    <div id="footer">
+    <header>
       <div class="container">
-        <div class="col-md-8">
-            <p class="bottom-nav text-left">
-              <a href="index.html">HOME</a>  |  
-              <a href="portfolio.html">PORTFOLIO</a>  |  
-              <a href="about.html">ABOUT</a>  |  
-              <a href="mailto:contact@rosanna.co.nz" target="_blank">CONTACT</a>
-            <p>
-            <p class="text-left">
-              This site was built using 
-              <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>, 
-              CSS3, and 
-              <a href="http://jquery.com/" target="_blank">jQuery</a>. Best viewed using 
-              <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Chrome</a>, 
-              <a href="https://www.apple.com/nz/safari/" target="_blank">Safari</a>, or 
-              <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>.
-            </p>
-        </div>
-        <div class="col-md-4">
-          <p><a class="linkedin-pic text-center" href="http://www.linkedin.com/pub/rosanna-fong/37/ab6/201" target="_blank">
-            <img src="images/linkedin.png" alt="linkedin-button"/>
+        <div class="row">
+          <div class="brand-area col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <a href="index.html">
+              <img class="logo" src="images/svgs/logo.svg" alt="brand-logo"/>
+              <h2 class="brand-name">Rosanna Fong</h2>
             </a>
-            <a href="#">
-             <button type="button" class="btn btn-primary back-to-top">Back to Top</button>
-            </a>
-          </p>
-          <p class="text-right">Copyright &#169; 2013 Rosanna Fong. All Rights Reserved. </p>
+          </div>
+          <nav class="navbar site-navbar col-xs-12 col-sm-12 col-md-12 col-lg-6" role="navigation">
+            <ul class="site-nav">
+              <li><a href="index.html" class="site-nav-btn active">Home</a></li>
+              <li><a href="about.html" class="site-nav-btn">About</a></li>
+              <li><a href="portfolio.html" class="site-nav-btn">Portfolio</a></li>
+              <li><a href="http://rosanna-design.tumblr.com/" class="site-nav-btn" target="_blank">Blog</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-
+    </header>
+    <main>
+      <section class="intro-section">
+        <div class="container">
+          <div class="row">
+            <div class="bubble col-xs-12 col-sm-12 col-md-8 col-lg-8">
+              <p>
+                <h4>
+                  Hello. I am a digital media designer.
+                </h4>
+              </p>
+                <h4>
+                  I like to design websites and graphics.
+                </h4>
+              </p>
+              <br/>
+              <div class="visible-lg visible-md hidden-sm hidden-xs">
+                <a href="portfolio.html" class="site-btn">View my portfolio</a>
+              </div>
+            </div>
+            <div class="jarhead col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            </div>
+          </div>
+        <div>
+      </section>
+      <section class="highlight-section">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title-inverse">
+              Recent work
+            </h2>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 featured-project-image">
+                <img src="images/svgs/cat.svg" alt="cat vector graphic"/>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 featured-project-image">
+                <img src="images/svgs/dog.svg" alt="dog vector graphic" class="hidden-xs"/>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 featured-project-description">
+                <h3>
+                  Vector Graphics Foo
+                </h3>
+                <p>
+                  I like to design vector graphics and icons as a hobby. My designs are usually based on inspiration by everyday objects and activities.
+                </p>
+                <div class="expand">
+                  <a href="vector-graphics-foo.html" class="site-btn-inverse">Find out more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="self-promo-section">
+        <div class="container">
+          <div class="row">
+            <div class="grey-snippet col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <hr class="visible-lg hidden-md hidden-sm hidden-xs"/>
+              <div class="icon-text-heading">
+                <div class="col-xs-2 icon">
+                  <img src="images/svgs/computer-icon.svg" alt="web design"/>
+                </div>
+                <div class="col-xs-10">
+                  <h3>Web Design</h3>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  I can use HTML5 and CSS3 to build custom websites. When it comes to front end development, I like to experiment with modern web development tools and frameworks. I also have an understanding in responsive design and cross-browser compatibility to support multiple devices and browsers.
+                </p>
+              </div>
+            </div>
+            <div class="grey-snippet col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <hr class="visible-lg hidden-md hidden-sm hidden-xs"/>
+              <div class="icon-text-heading">
+                <div class="col-xs-2 icon">
+                  <img src="images/svgs/pointer-icon.svg" alt="graphic design"/>
+                </div>
+                <div class="col-xs-10">
+                  <h3>Graphic Design</h3>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  I mostly design graphics for the web. I like to create vector graphics in my spare time. Every now and then I like to read up on tips and tricks with using Adobe llustrator and Photoshop too.
+                </p>
+              </div>
+            </div>
+            <div class="grey-snippet col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <hr class="visible-lg hidden-md hidden-sm hidden-xs"/>
+              <div class="icon-text-heading">
+                <div class="col-xs-2 icon">
+                  <img src="images/svgs/thinking-icon.svg" alt="graphic design"/>
+                </div>
+                <div class="col-xs-10">
+                  <h3>Creative Thinking</h3>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  As a designer, I am a creative thinker. I get inspired by many things everyday, from household objects to people I walked passed on the street, or even things I read on the web. No matter when and where, I always find inspiration in something. My inspirations can sometimes lead to a cool idea. From there, it's just a matter of how I can translate my idea into something real.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="push">
+      </div>
+      <section class="social-media-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-9 col-lg-9 social-media-icons">
+              <ul class="social-media-list">
+                <li class="brand-icon linkedin-icon">
+                  <a href="http://nz.linkedin.com/pub/rosanna-fong/37/ab6/201" target="_blank">
+                    <span class="invisible-layer"></span>
+                  </a>
+                </li>
+                <li class="brand-icon twitter-icon">
+                  <a href="https://twitter.com/share?url=http://rosanna.co.nz/&text=Check out Rosanna Fong's Design Portfolio @" target="_blank">
+                    <span class="invisible-layer"></span>
+                  </a>
+                </li>
+                <li class="brand-icon vimeo-icon">
+                  <a href="http://vimeo.com/user4626095" target="_blank">
+                    <span class="invisible-layer"></span>
+                  </a>
+                </li>
+                <li class="brand-icon email-icon">
+                  <a href="mailto:contact@rosanna.co.nz" target="_blank">
+                    <span class="invisible-layer"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 up-button-area">
+              <button type="button" class="site-btn up-button">
+                <span class="glyphicon glyphicon-arrow-up visible-xs visible-sm hidden-md hidden-lg"></span>
+                <span class="visible-lg visible-md hidden-sm hidden-xs">Back to top</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <nav class="navbar site-navbar col-xs-12 col-sm-12 col-md-12 col-lg-6" role="navigation">
+            <ul class="site-nav">
+              <li><a href="index.html" class="site-nav-btn active">Home</a></li>
+              <li><a href="about.html" class="site-nav-btn">About</a></li>
+              <li><a href="portfolio.html" class="site-nav-btn">Portfolio</a></li>
+              <li><a href="http://rosanna-design.tumblr.com/" class="site-nav-btn" target="_blank">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="author-note col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <p>
+              &#169; 2014 Rosanna Fong.
+            </p>
+          </div>
+        </div>
+      <div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="dist/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-      $('.carousel').carousel({
-        interval: 8000
-      })
-    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Scroll back to top script-->
     <script type="text/javascript">
     $(document).ready(function() {
-      $('.back-to-top').click(function(){
+      $('.up-button').click(function(){
         $("html, body").animate({scrollTop: 0}, 800);
         return false;
       });
     });
     </script>
-    </body>
+    <!--Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-48072101-1', 'rosanna.co.nz');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
