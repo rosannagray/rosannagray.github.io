@@ -60,6 +60,7 @@ $break-large: 1200px; /* Large devices (large desktops, 1200px and up) */
 =======================================================================================================================
 */
 
+
 body {
 	font-family: $font-stack;
 	color: $primary-colour;
@@ -105,6 +106,7 @@ header {
 			float: left;
 			color: $light-green;
 			font-size: 3em;
+			padding-left: 0.5em;
 		}
 		@media screen and (min-width: $break-medium) {
 			color: $light-grey;
@@ -116,12 +118,15 @@ header {
 	.logo {
 		float: left;
 		margin-left: -1em;
+		background: transparent url('../images/pngs/logo-fallback.png') center center no-repeat;
+		background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/logo.svg');
+		background-image: linear-gradient(transparent, transparent), url('../images/svgs/logo.svg');
+		height: 82px;
+		width: 70px;
 	}
 	
 	.site-navbar {
 		background-color: $primary-colour;
-		padding: 0;
-		margin: 0;
 		.site-nav {
 			li {
 				@media screen and (min-width: $break-large) {
@@ -169,12 +174,11 @@ section {
 	@include border-radius(2px);
 	background-color: $pink;
 	@media screen and (min-width: $break-large) {
-		padding: 0.5em;
-		margin: 1em 0;
 		font-size: 2em;
 		text-decoration: underline;
 		color: $primary-colour;
 		background: none;
+		padding-left: 0;
 	}
 }
 
@@ -190,9 +194,89 @@ hr {
 	border-top: 0.1em dashed $grey;
 	margin: 0.1em 0;
 }
+
+/*Icons
+=======================================================================================================================
+*/
+
+.computer-icon {
+	background: transparent url('../images/pngs/computer-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/computer-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/computer-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.pointer-icon {
+	background: transparent url('../images/pngs/pointer-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/pointer-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/pointer-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.thinking-icon {
+	background: transparent url('../images/pngs/thinking-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/thinking-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/thinking-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.reading-icon {
+	background: transparent url('../images/pngs/reading-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/reading-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/reading-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.illustration-icon {
+	background: transparent url('../images/pngs/illustration-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/illustration-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/illustration-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.cooking-icon {
+	background: transparent url('../images/pngs/cooking-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/cooking-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/cooking-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.movies-icon {
+	background: transparent url('../images/pngs/movies-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/movies-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/movies-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+.gaming-icon {
+	background: transparent url('../images/pngs/gaming-icon-fallback.png') center center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/gaming-icon.svg');
+	background-image: linear-gradient(transparent, transparent), url('../images/svgs/gaming-icon.svg');
+	height: 50px;
+	width: 50px;
+	position: absolute;
+}
+
+/*
+=======================================================================================================================
+*/
 .site-navbar {
 	background-color: $primary-colour;
-	padding: 0;
+	padding: 0 0.6em;
 	margin: 0;
 }
 
@@ -269,10 +353,9 @@ hr {
 	margin: 0 auto;
 	text-align: center;
 	@media screen and (min-width: $break-large) {
-		text-align: right;
 		float: right;
 		right: 0;
-		background: transparent url('../images/pngs/jarhead-fallback.png') right center no-repeat;
+		background: transparent url('../images/pngs/jarhead-fallback.png') center center no-repeat;
 	}
 }
 
@@ -377,7 +460,23 @@ hr {
 			padding: 2em;;
 		}
 	}
+	.cat-image {
+		background: transparent url('../images/pngs/cat-fallback.png') center center no-repeat;
+		background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/cat.svg');
+		background-image: linear-gradient(transparent, transparent), url('../images/svgs/cat.svg');
+		width: 275px;
+		height: 289px;
+	}
+
+	.dog-image {
+		background: transparent url('../images/pngs/dog-fallback.png') center center no-repeat;
+		background-image: -webkit-linear-gradient(transparent, transparent), url('../images/svgs/dog.svg');
+		background-image: linear-gradient(transparent, transparent), url('../images/svgs/dog.svg');
+		height: 289px;
+	}
 }
+
+
 
 .site-btn {
 	background-color: $pink;
@@ -385,6 +484,7 @@ hr {
 	padding: 1em;
 	border: none;
 	@include box-shadow(1px, 1px, 1px, $primary-colour);
+	@include border-radius(4px);
 	text-decoration: none;
 }
 
@@ -433,6 +533,12 @@ hr {
 }
 
 .personal-interests-section {
+	.snippet {
+		.description {
+			padding-bottom: 0;
+		}
+	}
+
 	@media screen and (min-width: $break-large) {
 		background: transparent url('../images/groovepaper.png') repeat;
 	}
@@ -446,7 +552,7 @@ hr {
 }
 .snippet {
 	@include border-radius(4px);
-	padding: 1em 1.5em 0 0;
+	padding: 1em 0 0 0;
 	margin: 0.5em 0;
 	@media screen and (min-width: $break-large) {
 		@include border-radius(0);
@@ -458,11 +564,13 @@ hr {
 	}
 
 	.icon-text-heading {
-		padding: 0.5em 0 0 0.5em;
+		padding: 0.5em 1em;
 
 		h3 {
-			padding-left: 0.5em;
+			padding-left: 3.5em;
+			padding-bottom: 0.5em;
 		}
+
 		@media screen and (min-width: $break-large) {
 			padding: 0;
 		}
@@ -477,23 +585,23 @@ hr {
 	}
 
 	h4 {
-		padding-left: 1em;
+		padding: 0.5em 0 0 4.5em;
 	}
 
 	.description {
-		padding: 0 1em 1em 2em;
+		padding: 0 1em 1em 1em;
 		margin-top: 0;
 
 		@media screen and (min-width: $break-large) {
-			padding: 0.5em 0;
+			padding: 0.5em 1em 0 0.5em;
 		}
 
 
 		p {
 			margin: 0 0 1em 0;
-
+			padding: 0 0.5em 0 0.5em;
 			@media screen and (min-width: $break-large) {
-				padding: 0.5em 0;
+				padding: 0.5em 1em 0 0;
 			}
 		}
 	}
@@ -642,7 +750,7 @@ hr {
 }
 
 .project-heading {
-	padding-left: 0;
+	padding-left: 0.5em;
 	@media screen and (min-width: $break-large) {
 		padding-left: 0;
 		h4 {
@@ -656,7 +764,7 @@ hr {
 	.caption {
 		background-color: $primary-colour;
 		color: $white;
-		padding-bottom: 2.5em;
+		padding-bottom: 3em;
 
 		@media screen and (min-width: $break-small) {
 			height: 6em;
@@ -823,6 +931,7 @@ footer {
 		@media screen and (min-width: $break-large) {
 			background: none;
 			margin: 0;
+			padding-left: 0;
 			.site-nav {
 				.active {
 					color: $pink;

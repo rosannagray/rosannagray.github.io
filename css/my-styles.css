@@ -53,7 +53,8 @@ header {
       header .brand-name {
         float: left;
         color: #e3e5da;
-        font-size: 3em; } }
+        font-size: 3em;
+        padding-left: 0.5em; } }
     @media screen and (min-width: 992px) {
       header .brand-name {
         color: #dfdfdf; } }
@@ -62,11 +63,14 @@ header {
         color: #dfdfdf; } }
   header .logo {
     float: left;
-    margin-left: -1em; }
+    margin-left: -1em;
+    background: transparent url("../images/pngs/logo-fallback.png") center center no-repeat;
+    background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/logo.svg");
+    background-image: linear-gradient(transparent, transparent), url("../images/svgs/logo.svg");
+    height: 82px;
+    width: 70px; }
   header .site-navbar {
-    background-color: #505050;
-    padding: 0;
-    margin: 0; }
+    background-color: #505050; }
     @media screen and (min-width: 1200px) {
       header .site-navbar .site-nav li {
         float: left;
@@ -111,12 +115,11 @@ section {
   background-color: #e05d6e; }
   @media screen and (min-width: 1200px) {
     .section-title, .section-title-inverse {
-      padding: 0.5em;
-      margin: 1em 0;
       font-size: 2em;
       text-decoration: underline;
       color: #505050;
-      background: none; } }
+      background: none;
+      padding-left: 0; } }
 
 .section-title-inverse {
   background-color: #505050; }
@@ -128,9 +131,79 @@ hr {
   border-top: 0.1em dashed #cccccc;
   margin: 0.1em 0; }
 
+/*Icons
+=======================================================================================================================
+*/
+.computer-icon {
+  background: transparent url("../images/pngs/computer-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/computer-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/computer-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.pointer-icon {
+  background: transparent url("../images/pngs/pointer-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/pointer-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/pointer-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.thinking-icon {
+  background: transparent url("../images/pngs/thinking-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/thinking-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/thinking-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.reading-icon {
+  background: transparent url("../images/pngs/reading-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/reading-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/reading-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.illustration-icon {
+  background: transparent url("../images/pngs/illustration-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/illustration-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/illustration-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.cooking-icon {
+  background: transparent url("../images/pngs/cooking-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/cooking-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/cooking-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.movies-icon {
+  background: transparent url("../images/pngs/movies-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/movies-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/movies-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+.gaming-icon {
+  background: transparent url("../images/pngs/gaming-icon-fallback.png") center center no-repeat;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/gaming-icon.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/svgs/gaming-icon.svg");
+  height: 50px;
+  width: 50px;
+  position: absolute; }
+
+/*
+=======================================================================================================================
+*/
 .site-navbar {
   background-color: #505050;
-  padding: 0;
+  padding: 0 0.6em;
   margin: 0; }
 
 .site-nav {
@@ -201,10 +274,9 @@ hr {
   text-align: center; }
   @media screen and (min-width: 1200px) {
     .jarhead {
-      text-align: right;
       float: right;
       right: 0;
-      background: transparent url("../images/pngs/jarhead-fallback.png") right center no-repeat; } }
+      background: transparent url("../images/pngs/jarhead-fallback.png") center center no-repeat; } }
 
 .bubble {
   margin: 0 auto;
@@ -300,6 +372,17 @@ hr {
         margin: 0; } }
     .highlight-section .featured-project-image .image {
       padding: 2em; }
+  .highlight-section .cat-image {
+    background: transparent url("../images/pngs/cat-fallback.png") center center no-repeat;
+    background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/cat.svg");
+    background-image: linear-gradient(transparent, transparent), url("../images/svgs/cat.svg");
+    width: 275px;
+    height: 289px; }
+  .highlight-section .dog-image {
+    background: transparent url("../images/pngs/dog-fallback.png") center center no-repeat;
+    background-image: -webkit-linear-gradient(transparent, transparent), url("../images/svgs/dog.svg");
+    background-image: linear-gradient(transparent, transparent), url("../images/svgs/dog.svg");
+    height: 289px; }
 
 .site-btn, .site-btn-inverse, .social-media-section .up-button, .social-media-section .project-header-section .back-button, .project-header-section .social-media-section .back-button {
   background-color: #e05d6e;
@@ -309,6 +392,11 @@ hr {
   -webkit-box-shadow: 1px 1px 1px #505050;
   -moz-box-shadow: 1px 1px 1px #505050;
   box-shadow: 1px 1px 1px #505050;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   text-decoration: none; }
 
 .site-btn:hover, .site-btn-inverse:hover, .social-media-section .up-button:hover, .social-media-section .project-header-section .back-button:hover, .project-header-section .social-media-section .back-button:hover {
@@ -347,6 +435,8 @@ hr {
   .self-promo-section .grey-snippet {
     height: 24.5em; } }
 
+.personal-interests-section .snippet .description, .personal-interests-section .grey-snippet .description {
+  padding-bottom: 0; }
 @media screen and (min-width: 1200px) {
   .personal-interests-section {
     background: transparent url("../images/groovepaper.png") repeat; } }
@@ -362,7 +452,7 @@ hr {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  padding: 1em 1.5em 0 0;
+  padding: 1em 0 0 0;
   margin: 0.5em 0; }
   @media screen and (min-width: 1200px) {
     .snippet, .grey-snippet {
@@ -375,9 +465,10 @@ hr {
     border: 0.5em solid #e3e5da;
     margin: 0.15em 3em 0 0; }
   .snippet .icon-text-heading, .grey-snippet .icon-text-heading {
-    padding: 0.5em 0 0 0.5em; }
+    padding: 0.5em 1em; }
     .snippet .icon-text-heading h3, .grey-snippet .icon-text-heading h3 {
-      padding-left: 0.5em; }
+      padding-left: 3.5em;
+      padding-bottom: 0.5em; }
     @media screen and (min-width: 1200px) {
       .snippet .icon-text-heading, .grey-snippet .icon-text-heading {
         padding: 0; } }
@@ -386,18 +477,19 @@ hr {
   .snippet h3, .grey-snippet h3 {
     font-size: 1.5em; }
   .snippet h4, .grey-snippet h4 {
-    padding-left: 1em; }
+    padding: 0.5em 0 0 4.5em; }
   .snippet .description, .grey-snippet .description {
-    padding: 0 1em 1em 2em;
+    padding: 0 1em 1em 1em;
     margin-top: 0; }
     @media screen and (min-width: 1200px) {
       .snippet .description, .grey-snippet .description {
-        padding: 0.5em 0; } }
+        padding: 0.5em 1em 0 0.5em; } }
     .snippet .description p, .grey-snippet .description p {
-      margin: 0 0 1em 0; }
+      margin: 0 0 1em 0;
+      padding: 0 0.5em 0 0.5em; }
       @media screen and (min-width: 1200px) {
         .snippet .description p, .grey-snippet .description p {
-          padding: 0.5em 0; } }
+          padding: 0.5em 1em 0 0; } }
 
 .snippet:hover hr, .grey-snippet:hover hr {
   border: 0.5em solid #e05d6e; }
@@ -498,7 +590,7 @@ hr {
   color: #e3e5da; }
 
 .project-heading {
-  padding-left: 0; }
+  padding-left: 0.5em; }
   @media screen and (min-width: 1200px) {
     .project-heading {
       padding-left: 0; }
@@ -511,7 +603,7 @@ hr {
   .project-thumb .caption {
     background-color: #505050;
     color: white;
-    padding-bottom: 2.5em; }
+    padding-bottom: 3em; }
     @media screen and (min-width: 768px) {
       .project-thumb .caption {
         height: 6em; } }
@@ -654,7 +746,8 @@ footer {
   @media screen and (min-width: 1200px) {
     footer .site-navbar {
       background: none;
-      margin: 0; }
+      margin: 0;
+      padding-left: 0; }
       footer .site-navbar .site-nav .active {
         color: #e05d6e; } }
   @media screen and (min-width: 1200px) {
