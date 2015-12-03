@@ -1,0 +1,43 @@
+/*Table of contents
+1. Introduction
+2. Main content
+3. Contact Information
+=====================================================================================================
+*/
+
+/*1. Introductions
+=====================================================================================================*/
+.intro {
+	h1 {
+		border-bottom: 2px solid $darkPink;
+		padding-bottom: 0.2em;
+	}
+}
+
+/*2. Main content
+=====================================================================================================*/
+section {
+	padding-bottom: 1em;
+}
+h2 {
+	background-color: $darkPink;
+	color: $white;
+	padding: 0.2em;
+}
+
+/*3. Contact Information
+=====================================================================================================*/
+.contact-area {
+	background-color: $grey;
+	padding-bottom: 2em;
+	h3 {
+		margin-top: 0.5em;
+	}
+	a {
+		color: $blackTint25;
+	}
+	a:hover,
+	a:focus {
+		color: $darkPink;
+	}
+}

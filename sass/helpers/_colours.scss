@@ -1,0 +1,56 @@
+/*Table of contents
+1. Base colours
+2. Colour tints
+	2.1 Pink tints
+	2.2 Black tints
+3. Colour shades
+	3.1 Pink shades
+	3.2 Dark Pink shades
+	3.3 White shades
+	3.4 Grey shades
+=====================================================================================================
+*/
+
+/*1. Base colours
+=====================================================================================================*/
+$pink: #e05d6e;
+$darkPink: #d1283e;
+$black: #000;
+$charcoal: #505050;
+$white: #ffffff;
+$cream: #e3e5da;
+$grey: #d8d8d8;
+
+/*2. Colour tints
+=====================================================================================================*/
+/*2.1 Pink tints*/
+$pinkTint25: tint($pink, 25%);
+$pinkTint50: tint($pink, 50%);
+$pinkTint75: tint($pink, 75%);
+
+/*2.2 Black tints*/
+$blackTint25: tint($black, 25%);
+$blackTint50: tint($black, 50%);
+$blackTint75: tint($black, 75%);
+
+/*3. Colour shades
+=====================================================================================================*/
+/*3.1 Pink shades*/
+$pinkShade5: shade($pink, 5%);
+$pinkShade10: shade($pink, 10%);
+$pinkShade15: shade($pink, 15%);
+
+/*3.2 Dark pink shades*/
+$darkPinkShade5: shade($darkPink, 5%);
+$darkPinkShade10: shade($darkPink, 10%);
+$darkPinkShade15: shade($darkPink, 15%);
+
+/*3.3 White shades*/
+$whiteShade5: shade($white, 5%);
+$whiteShade10: shade($white, 10%);
+$whiteShade15: shade($white, 15%);
+
+/*3.4 Grey shades*/
+$greyShade5: shade($grey, 5%);
+$greyShade10: shade($grey, 10%);
+$greyShade15: shade($grey, 15%);

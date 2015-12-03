@@ -1,228 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Rosanna Fong: Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Home - Rosanna Fong Portfolio</title>
+    <meta name="description" content="Rosanna Fong's Design Portfolio">
     <meta name="author" content="Rosanna Fong">
-    <meta name="description" content="Welcome to Rosanna Fong's Design Portfolio. Find out about Rosanna Fong. Explore some of Rosanna Fong's projects. Visit Rosanna Fong's blog.">
-    <meta name="keywords" content="portfolio, design, web design, graphic design, Rosanna Fong, home, about, creative, projects, skills">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/my-styles.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen"/>
+    <link href="/images/brand/favicon.ico" rel="icon" type="image/x-icon">
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="brand-area col-xs-12 col-sm-12 col-md-12 col-lg-8">
-            <a href="index.html">
-              <span class="logo img-responsive">
-                <!--Put logo image backgrounds here-->
-              </span>
-              <h2 class="brand-name">Rosanna Fong</h2>
+    <div class="page-wrap">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="/">
+              <img src="images/brand/logo-sm.svg" onerror="this.src='images/brand/logo-sm.png'; this.onerror=null;" alt="Rosanna Fong logo"/>
+              <span class="brand">Rosanna Fong</span>
             </a>
           </div>
-          <nav class="navbar site-navbar col-xs-12 col-sm-12 col-md-12 col-lg-4" role="navigation">
-            <ul class="site-nav">
-              <li><a href="index.html" class="site-nav-btn active">Home</a></li>
-              <li><a href="about.html" class="site-nav-btn">About</a></li>
-              <li><a href="portfolio.html" class="site-nav-btn">Portfolio</a></li>
-              <li><a href="http://rosanna-design.tumblr.com/" class="site-nav-btn" target="_blank">Blog</a></li>
+          <nav class="primary-nav">
+            <a class="toggle-btn" href="#"><span class="fa fa-bars"></span> Menu</a>
+            <ul class="toggle-nav active">
+              <li class="current-item"><a href="index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
             </ul>
           </nav>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="intro-section">
-        <div class="container">
-          <div class="row">
-            <div class="bubble col-xs-12 col-sm-12 col-md-8 col-lg-8">
-              <p>
-                <h4>
-                  Hello. I am a digital media designer.
-                </h4>
-              </p>
-                <h4>
-                  I like to design websites and graphics.
-                </h4>
-              </p>
-              <br/>
-              <div class="visible-lg visible-md hidden-sm hidden-xs">
-                <a href="portfolio.html" class="site-btn">View my portfolio</a>
-              </div>
-            </div>
-            <div class="jarhead col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <!--Put jarhead image backgrounds here-->
-            </div>
-          </div>
-        <div>
-      </section>
-      <section class="highlight-section">
-        <div class="container">
-          <div class="row">
-            <h2 class="section-title-inverse">
-              Recent work
-            </h2>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 featured-project-image cat-image">
-                <!--Put cat image backgrounds here-->
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 featured-project-image dog-image hidden-xs">
-                <!--Put dog image backgrounds here-->
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 featured-project-description">
-                <h3>
-                  Vector Graphics Foo
-                </h3>
-                <p>
-                  I like to design vector graphics and icons as a hobby. My designs are usually based on inspiration by everyday objects and activities.
-                </p>
-                <div class="expand">
-                  <a href="vector-graphics-foo.html" class="site-btn-inverse">Find out more</a>
-                </div>
-              </div>
-            </div>
+      </header>
+      <main>
+        <div class="intro">
+          <div class="container">
+            <h1>Projects</h1>
+            <p class="big">I like to design nice interfaces for the web. Here is a showcase of some projects that I've worked on.</p>
           </div>
         </div>
-      </section>
-      <section class="self-promo-section">
         <div class="container">
-          <div class="row">
-            <div class="grey-snippet col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <hr class="visible-lg hidden-md hidden-sm hidden-xs"/>
-              <div class="icon-text-heading col-xs-12">
-                <span class="icon computer-icon img-responsive">
-                  <!--Put computer icon image backgrounds here-->
-                </span>
-                <h3>Web Design</h3>
+          <!--Begin main content-->
+          <section>
+            <div class="row">
+              <div class="col-6">
+                <a href="projects/heat-pump-controller.html" class="outer-box">
+                  <img src="images/project-thumbs/heat-pump-controller-thumb.png" onerror="this.src='images/project-thumbs/heat-pump-controller-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for the Heat pump Controller."/>
+                  <div class="caption">
+                    <p class="bigger">Heat pump Controller</p>
+                    <p>User interface design for controlling heat pumps.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Branding</span></li>
+                      <li><span class="label">UI design</span></li>
+                      <li><span class="label">Responsive design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about the Heat pump Controller.</span></p>
+                  </div>
+                </a>
               </div>
-              <div class="description">
-                <p>
-                  I can use HTML5 and CSS3 to build custom websites. When it comes to front end development, I like to experiment with modern web development tools and frameworks. I also have an understanding in responsive design and cross-browser compatibility to support multiple devices and browsers.
-                </p>
-              </div>
-            </div>
-            <div class="grey-snippet col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <hr class="visible-lg hidden-md hidden-sm hidden-xs"/>
-              <div class="icon-text-heading col-xs-12">
-                <span class="icon pointer-icon img-responsive">
-                  <!--Put pointer icon image backgrounds here-->
-                </span>
-                <h3>Graphic Design</h3>
-              </div>
-              <div class="description">
-                <p>
-                  I mostly design graphics for the web. I like to create vector graphics in my spare time. Every now and then I like to read up on tips and tricks with using Adobe llustrator and Photoshop too.
-                </p>
-              </div>
-            </div>
-            <div class="grey-snippet col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <hr class="visible-lg hidden-md hidden-sm hidden-xs"/>
-              <div class="icon-text-heading col-xs-12">
-                <span class="icon thinking-icon img-responsive">
-                  <!--Put thinking icon image backgrounds here-->
-                </span>
-                <h3>Creative Thinking</h3>
-              </div>
-              <div class="description">
-                <p>
-                  As a designer, I am a creative thinker. I get inspired by many things everyday, from household objects to people I walked passed on the street, or even things I read on the web. No matter when and where, I always find inspiration in something. My inspirations can sometimes lead to a cool idea. From there, it's just a matter of how I can translate my idea into something real.
-                </p>
+              <div class="col-6">
+                <a href="projects/matt-rose.html" class="outer-box">
+                  <img src="images/project-thumbs/matt-rose-thumb.png" onerror="this.src='images/project-thumbs/matt-rose-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Matthew's and Rosanna's Story."/>
+                  <div class="caption">
+                    <p class="bigger">Matthew's and Rosanna's Story</p>
+                    <p>An illustrated story about my fianc&#233; and I.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Web design</span></li>
+                      <li><span class="label">Graphic design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Matthew and Rosanna's Story.</span></p>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="col-6">
+                <a href="projects/branding.html" class="outer-box">
+                  <img src="images/project-thumbs/branding-thumb.png" onerror="this.src='images/project-thumbs/branding-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Personal branding."/>
+                  <div class="caption">
+                    <p class="bigger">Personal branding</p>
+                    <p>My personal brand development.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Branding</span></li>
+                      <li><span class="label">Graphic design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Personal Branding.</span></p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="projects/restaurant88.html" class="outer-box">
+                  <img src="images/project-thumbs/restaurant88-thumb.png" onerror="this.src='images/project-thumbs/restaurant88-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Restaurant 88's website."/>
+                  <div class="caption">
+                    <p class="bigger">Restaurant 88 Website</p>
+                    <p>A website for Restaurant 88 and their sister store Banh Mi 88.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Web design</span></li>
+                      <li><span class="label">Responsive design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Restaurant 88's website.</span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <a href="projects/lca2015.html" class="outer-box">
+                  <img src="images/project-thumbs/lca-2015-thumb.png" onerror="this.src='images/project-thumbs/lca-2015-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for the Linux Conference Auckland 2015 Website Mockup."/>
+                  <div class="caption">
+                    <p class="bigger">LCA2015 Website Mock up</p>
+                    <p>Designs for the website for the Linux Conference 2015.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Web design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about the Linux Conference Auckland 2015 Website Mock up.</span></p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="projects/vbc-blog.html" class="outer-box">
+                  <img src="images/project-thumbs/vbc-blog-thumb.png" onerror="this.src='images/project-thumbs/vbc-blog-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for VBC's blog theme."/>
+                  <div class="caption">
+                    <p class="bigger">VBC Blog Theme</p>
+                    <p>A custom Tumblr blog theme developed for VBC 88.3FM.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Theme design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about VBC's Blog Theme.</span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <a href="projects/generated-shapes.html" class="outer-box">
+                  <img src="images/project-thumbs/generated-shapes-thumb.png" onerror="this.src='images/project-thumbs/generated-shapes-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Generated Shapes."/>
+                  <div class="caption">
+                    <p class="bigger">Generated Shapes</p>
+                    <p>Computer generated shapes using Python Processing.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Visual design</span></li>
+                      <li><span class="label">Creative programming</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Generated Shapes.</span></p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="projects/algorithmic-flora.html" class="outer-box">
+                  <img src="images/project-thumbs/algorithmic-flora-thumb.png" onerror="this.src='images/project-thumbs/algorithmic-flora-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Algorithmic Flora."/>
+                  <div class="caption">
+                    <p class="bigger">Algorithmic Flora</p>
+                    <p>Experimentation with patterns, fractals, and layering.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Visual design</span></li>
+                      <li><span class="label">Creative programming</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Algorithmic Flora.</span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <a href="projects/vector-graphics-foo.html" class="outer-box">
+                  <img src="images/project-thumbs/vector-art-thumb.png" onerror="this.src='images/project-thumbs/vector-art-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Vector Graphics Foo."/>
+                  <div class="caption">
+                    <p class="bigger">Vector Graphics Foo</p>
+                    <p>A collection of some of my vector art.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Graphic design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Vector Graphics Foo.</span></p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="projects/argia.html" class="outer-box">
+                  <img src="images/project-thumbs/argia-thumb.png" onerror="this.src='images/project-thumbs/argia-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Argia."/>
+                  <div class="caption">
+                    <p class="bigger">Argia</p>
+                    <p>A project inspired by Italo Calvino's Invisible cities.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">3D design</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Argia.</span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <a href="projects/sketches.html" class="outer-box">
+                  <img src="images/project-thumbs/sketches-thumb.png" onerror="this.src='images/project-thumbs/sketches-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Sketches."/>
+                  <div class="caption">
+                    <p class="bigger">Sketches</p>
+                    <p>A collection of some of my favourite sketches.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Illustration</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Sketches.</span></p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="projects/manifesto.html" class="outer-box">
+                  <img src="images/project-thumbs/manifesto-thumb.png" onerror="this.src='images/project-thumbs/manifesto-thumb.jpg'; this.onerror=null;" class="img-responsive" alt="Thumbnail for Design Manifesto."/>
+                  <div class="caption">
+                    <p class="bigger">Design Manifesto</p>
+                    <p>My design manifesto.</p>
+                    <ul class="inline-list">
+                      <li><span class="label">Design theory</span></li>
+                    </ul>
+                  </div>
+                  <div class="overlay">
+                    <p><span class="sr-only">Find out more about Design Manifesto.</span></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!--End main content-->
         </div>
-      </section>
-      <div class="push">
-      </div>
-      <section class="social-media-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-9 col-lg-9 social-media-icons">
-              <ul class="social-media-list">
-                <li class="brand-icon linkedin-icon">
-                  <a href="http://nz.linkedin.com/pub/rosanna-fong/37/ab6/201" target="_blank">
-                    <span class="invisible-layer"></span>
-                  </a>
-                </li>
-                <li class="brand-icon twitter-icon">
-                  <a href="https://twitter.com/share?url=http://rosanna.co.nz/&text=Check out Rosanna Fong's Design Portfolio @" target="_blank">
-                    <span class="invisible-layer"></span>
-                  </a>
-                </li>
-                <li class="brand-icon vimeo-icon">
-                  <a href="http://vimeo.com/user4626095" target="_blank">
-                    <span class="invisible-layer"></span>
-                  </a>
-                </li>
-                <li class="brand-icon email-icon">
-                  <a href="mailto:contact@rosanna.co.nz" target="_blank">
-                    <span class="invisible-layer"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 up-button-area">
-              <button type="button" class="site-btn up-button">
-                <span class="glyphicon glyphicon-arrow-up visible-xs visible-sm hidden-md hidden-lg"></span>
-                <span class="visible-lg visible-md hidden-sm hidden-xs">Back to top</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
+      </main>
+    </div>
+    <div class="contact-area">
       <div class="container">
-        <div class="row">
-          <nav class="navbar site-navbar col-xs-12 col-sm-12 col-md-12 col-lg-6" role="navigation">
-            <ul class="site-nav">
-              <li><a href="index.html" class="site-nav-btn active">Home</a></li>
-              <li><a href="about.html" class="site-nav-btn">About</a></li>
-              <li><a href="portfolio.html" class="site-nav-btn">Portfolio</a></li>
-              <li><a href="http://rosanna-design.tumblr.com/" class="site-nav-btn" target="_blank">Blog</a></li>
-            </ul>
-          </nav>
-          <div class="author-note col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <p>
-              &#169; 2014 Rosanna Fong.
-            </p>
-          </div>
-        </div>
-      <div>
+        <h3>Contact me</h3>
+        <ul class="inline-list">
+          <li><a href="mailto:contact@rosanna.co.nz"><span class="fa fa-envelope fa-3x"></span><span class="sr-only">Email: contact@rosanna.co.nz</span></a></li>
+          <li><a href="http://nz.linkedin.com/pub/rosanna-fong/37/ab6/201"><span class="fa fa-linkedin-square fa-3x"></span><span class="sr-only">This link takes you to an external site. You will be taken to Rosanna's LinkedIn profile.</span></a></li>
+          <li><a href="https://github.com/rosannafong"><span class="fa fa-github-square fa-3x"></span><span class="sr-only">This link takes you to an external site. You will be taken to Rosanna's GitHub Gist.</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright-info">&copy; 2015 Rosanna Fong.</p>
+        <button type="button" class="button up-button">Back to top</button>
+      </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!--Scroll back to top script-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/menu-toggle.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-      $('.up-button').click(function(){
-        $("html, body").animate({scrollTop: 0}, 800);
-        return false;
+      $(document).ready(function() {
+        $('.up-button').click(function(){
+          $("html, body").animate({scrollTop: 0}, 800);
+          return false;
+        });
       });
-    });
-    </script>
-    <!--Google Analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-48072101-1', 'rosanna.co.nz');
-      ga('send', 'pageview');
     </script>
   </body>
 </html>

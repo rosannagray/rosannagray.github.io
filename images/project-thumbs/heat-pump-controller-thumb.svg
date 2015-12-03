@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1168px" height="711px" viewBox="0 0 1168 711" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16044) - http://www.bohemiancoding.com/sketch -->
+    <title>heat-pump-controller-thumb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="heat-pump-controller-thumb" sketch:type="MSLayerGroup">
+            <rect id="Rectangle-30" fill="#3F3F3F" sketch:type="MSShapeGroup" x="0" y="0" width="1168" height="711"></rect>
+            <g id="logo-icon" transform="translate(286.000000, 57.000000)" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-11" fill="#CD9987" x="90.2263385" y="41.6799575" width="205.63212" height="91.6959064"></rect>
+                <path d="M469.058596,87.5279107 L292.802492,175.055821 L292.802492,0 L469.058596,87.5279107 L469.058596,87.5279107 Z" id="Triangle-1" fill="#CD9987"></path>
+                <rect id="Rectangle-11" fill="#9DB2A7" transform="translate(401.913413, 508.495481) scale(-1, 1) translate(-401.913413, -508.495481) " x="299.097353" y="462.647528" width="205.63212" height="91.6959064"></rect>
+                <path d="M125.897217,508.495481 L302.15332,596.023392 L302.15332,420.96757 L125.897217,508.495481 L125.897217,508.495481 Z" id="Triangle-1" fill="#9DB2A7"></path>
+                <path d="M551.849466,89.2505216 L551.849466,293.482313 L459.524841,293.482313 L459.524841,89.2505216 L551.849466,89.2505216 L551.849466,89.2505216 Z" id="Rectangle-11" fill="#CD9987"></path>
+                <path d="M507.293654,465.1874 L419.165603,290.131579 L595.421706,290.131579 L507.293654,465.1874 L507.293654,465.1874 Z" id="Triangle-1" fill="#CD9987"></path>
+                <path d="M41.9657389,304.26369 L41.9657389,508.495481 L134.290364,508.495481 L134.290364,304.26369 L41.9657389,304.26369 L41.9657389,304.26369 Z" id="Rectangle-11" fill="#9DB2A7"></path>
+                <path d="M88.1280516,132.248804 L0,307.304625 L176.256103,307.304625 L88.1280516,132.248804 L88.1280516,132.248804 Z" id="Triangle-1" fill="#9DB2A7"></path>
+            </g>
+        </g>
+    </g>
+</svg>

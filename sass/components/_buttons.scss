@@ -1,0 +1,48 @@
+/*Table of contents
+1. Button styles
+2. Back to top button
+=====================================================================================================
+*/
+
+/*1. Button styles
+=====================================================================================================*/
+button,
+.button {
+	background: none;
+	color: $blackTint25;
+	border: 2px solid $blackTint25;
+	font-size: 1em;
+	padding: 1em;
+	margin: 0.2em 0;
+	@include border-radius(0.5em);
+}
+button:hover,
+.button:hover {
+	border: 2px solid $darkPink;
+	color: $darkPink;
+}
+button:focus,
+.button:focus {
+	outline: 1px solid $darkPink;
+	outline-offset: 2px;
+}
+
+/*2. Back to top button
+=====================================================================================================*/
+.up-button {
+    color: $white;
+    border: 2px solid $white;
+
+    @media screen and ($break-md) {
+    	float: right;
+    	margin: 1em 0;
+    }
+}
+.up-button:hover {
+	border: 2px solid $pinkTint25;
+	color: $pinkTint25;
+}
+.up-button:focus {
+	outline: 1px solid $white;
+	outline-offset: 2px;
+}

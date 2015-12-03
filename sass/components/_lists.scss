@@ -1,0 +1,50 @@
+/*Table of contents
+1. Inline list
+2. No bullet list
+3. Styled description list
+=====================================================================================================
+*/
+
+/*1. Inline list
+=====================================================================================================*/
+.inline-list {
+	list-style: none;
+    margin-top: 0;
+    margin-bottom: 0.94444rem;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.inline-list > li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0.2em 1.22222rem 0.2em 0;
+}
+
+.inline-list > li > * {
+	display: block;
+}
+
+/*2. No bullet list
+=====================================================================================================*/
+.no-bullet {
+	list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/*3. Styled description list
+=====================================================================================================*/
+dl {
+    dt {
+        font-size: 1.125em;
+        color: $black;
+        font-weight: bold;
+    }
+    dd {
+        margin-bottom: 1em;
+    }
+}
