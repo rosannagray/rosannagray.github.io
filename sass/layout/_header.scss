@@ -79,10 +79,11 @@ header {
 		float: left;
 		width: 100%;
 		padding-bottom: 1px;
-		-moz-transition:max-height 500ms ease;
-	    -o-transition:max-height 500ms ease;
-	    transition:max-height 500ms ease;
-	    max-height: 150px;
+		-moz-transition: all .33s ease;
+	    -o-transition: all .33s ease;
+	    transition: all .33s ease;
+	    height: 135px;
+	    @include opacity(1);
 
 		@media screen and ($break-md) {
 			display: none;
@@ -105,7 +106,6 @@ header {
 			color: $white;
 			padding: 1em;
 			display: block;
-			margin-bottom: 0.2em;
 		}
 		a:focus {
 			outline: 1px solid $white;
@@ -113,15 +113,19 @@ header {
 	}
 	ul.toggle-nav {
 		//display: none;
-		-moz-transition:max-height 500ms ease;
-	    -o-transition:max-height 500ms ease;
-	    transition:max-height 500ms ease;
-	    max-height: 0;
+		-moz-transition: all .33s ease;
+	    -o-transition: all .33s ease;
+	    transition: all .33s ease;
+	    height: 0;
+	    @include opacity(0);
+	    margin-top: -0.5em;
 		@media screen and ($break-md) {
 			display: block;
 			float: right;
 			width: auto;
 			background: none;
+			@include opacity(1);
+			margin-top: 1em;
 		}
 		li {
 			border: 0;
