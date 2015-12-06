@@ -96,15 +96,10 @@ header {
 			border-bottom: 1px solid $grey;
 		}
 		.current-item {
-			font-weight: bold;
 			a {
+				font-weight: bold;
 				color: $pink;
 			}
-			/*background-color: $grey;
-			@include border-radius(0.5em);
-			a {
-				color: $blackTint25;
-			}*/
 		}
 		a {
 			text-decoration: none;
