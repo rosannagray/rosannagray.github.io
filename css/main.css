@@ -682,10 +682,11 @@ header .logo .brand {
   -moz-transition: all .33s ease;
   -o-transition: all .33s ease;
   transition: all .33s ease;
-  transform: translateY(10%);
-  height: 120px;
+  transform: translateY(5%);
+  height: 130px;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
+  margin-top: -0.2em;
 }
 @media screen and (min-width: 40.063em) {
   /* line 75, ../sass/layout/_header.scss */
@@ -693,12 +694,12 @@ header .logo .brand {
     display: none;
   }
 }
-/* line 92, ../sass/layout/_header.scss */
+/* line 93, ../sass/layout/_header.scss */
 .primary-nav ul.active li {
   margin-left: -2.5em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }
-/* line 96, ../sass/layout/_header.scss */
+/* line 97, ../sass/layout/_header.scss */
 .primary-nav ul.active .current-item {
   font-weight: bold;
   background-color: #d8d8d8;
@@ -706,11 +707,11 @@ header .logo .brand {
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 100, ../sass/layout/_header.scss */
+/* line 101, ../sass/layout/_header.scss */
 .primary-nav ul.active .current-item a {
   color: #3f3f3f;
 }
-/* line 104, ../sass/layout/_header.scss */
+/* line 105, ../sass/layout/_header.scss */
 .primary-nav ul.active a {
   text-decoration: none;
   transition: color linear 0.15s;
@@ -718,22 +719,23 @@ header .logo .brand {
   padding: 1em;
   display: block;
 }
-/* line 111, ../sass/layout/_header.scss */
+/* line 112, ../sass/layout/_header.scss */
 .primary-nav ul.active a:focus {
   outline: 1px solid #ffffff;
 }
-/* line 115, ../sass/layout/_header.scss */
+/* line 116, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav {
   -moz-transition: all .33s ease;
   -o-transition: all .33s ease;
   transition: all .33s ease;
+  transform: translateY(5%);
   height: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  margin-top: -0.5em;
+  margin-top: -0.2em;
 }
 @media screen and (min-width: 40.063em) {
-  /* line 115, ../sass/layout/_header.scss */
+  /* line 116, ../sass/layout/_header.scss */
   .primary-nav ul.toggle-nav {
     display: block;
     float: right;
@@ -745,29 +747,29 @@ header .logo .brand {
   }
 }
 @media screen and (min-width: 40.063em) {
-  /* line 131, ../sass/layout/_header.scss */
+  /* line 133, ../sass/layout/_header.scss */
   .primary-nav ul.toggle-nav li {
     float: left;
     margin-left: 1em;
   }
 }
-/* line 136, ../sass/layout/_header.scss */
+/* line 138, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav li a {
   color: #ffffff;
 }
-/* line 139, ../sass/layout/_header.scss */
+/* line 141, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav li a:hover {
   color: #e78592;
   text-decoration: underline;
 }
-/* line 144, ../sass/layout/_header.scss */
+/* line 146, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav .current-item {
   background-color: #d8d8d8;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 148, ../sass/layout/_header.scss */
+/* line 150, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav .current-item a,
 .primary-nav ul.toggle-nav .current-item a:hover,
 .primary-nav ul.toggle-nav .current-item a:focus {

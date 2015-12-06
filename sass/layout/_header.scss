@@ -82,16 +82,17 @@ header {
 		-moz-transition: all .33s ease;
 	    -o-transition: all .33s ease;
 	    transition: all .33s ease;
-	    transform: translateY(10%);
-	    height: 120px;
+	    transform: translateY(5%);
+	    height: 130px;
 	    @include opacity(1);
+	    margin-top: -0.2em;
 
 		@media screen and ($break-md) {
 			display: none;
 		}
 		li {
 			margin-left: -2.5em;
-			margin-bottom: 0.2em;
+			margin-bottom: 0.5em;
 		}
 		.current-item {
 			font-weight: bold;
@@ -117,9 +118,10 @@ header {
 		-moz-transition: all .33s ease;
 	    -o-transition: all .33s ease;
 	    transition: all .33s ease;
+	    transform: translateY(5%);
 	    height: 0;
 	    @include opacity(0);
-	    margin-top: -0.5em;
+	    margin-top: -0.2em;
 		@media screen and ($break-md) {
 			display: block;
 			float: right;
