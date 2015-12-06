@@ -93,14 +93,18 @@ header {
 		li {
 			margin-left: -2.5em;
 			margin-bottom: 0.5em;
+			border-bottom: 1px solid $grey;
 		}
 		.current-item {
 			font-weight: bold;
-			background-color: $grey;
+			a {
+				color: $pink;
+			}
+			/*background-color: $grey;
 			@include border-radius(0.5em);
 			a {
 				color: $blackTint25;
-			}
+			}*/
 		}
 		a {
 			text-decoration: none;
@@ -134,6 +138,7 @@ header {
 			@media screen and ($break-md) {
 				float: left;
 				margin-left: 1em;
+				border: 0;
 			}
 			a {
 				color: $white;
@@ -144,9 +149,10 @@ header {
 			}
 		}
 		.current-item {
-			background-color: $grey;
-			@include border-radius(0.5em);
-
+			@media screen and ($break-md) {
+				background-color: $grey;
+				@include border-radius(0.5em);
+			}
 			a,
 			a:hover,
 			a:focus {
