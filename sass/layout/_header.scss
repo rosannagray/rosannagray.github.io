@@ -82,15 +82,15 @@ header {
 		-moz-transition: all .33s ease;
 	    -o-transition: all .33s ease;
 	    transition: all .33s ease;
-	    height: 135px;
+	    height: 120px;
 	    @include opacity(1);
 
 		@media screen and ($break-md) {
 			display: none;
 		}
 		li {
-			border-bottom: 1px solid $grey;
 			margin-left: -2.5em;
+			margin-bottom: 0.2em;
 		}
 		.current-item {
 			font-weight: bold;
@@ -128,7 +128,6 @@ header {
 			margin-top: 1em;
 		}
 		li {
-			border: 0;
 			@media screen and ($break-md) {
 				float: left;
 				margin-left: 1em;

@@ -682,7 +682,7 @@ header .logo .brand {
   -moz-transition: all .33s ease;
   -o-transition: all .33s ease;
   transition: all .33s ease;
-  height: 135px;
+  height: 120px;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
@@ -694,8 +694,8 @@ header .logo .brand {
 }
 /* line 91, ../sass/layout/_header.scss */
 .primary-nav ul.active li {
-  border-bottom: 1px solid #d8d8d8;
   margin-left: -2.5em;
+  margin-bottom: 0.2em;
 }
 /* line 95, ../sass/layout/_header.scss */
 .primary-nav ul.active .current-item {
@@ -743,10 +743,6 @@ header .logo .brand {
     margin-top: 1em;
   }
 }
-/* line 130, ../sass/layout/_header.scss */
-.primary-nav ul.toggle-nav li {
-  border: 0;
-}
 @media screen and (min-width: 40.063em) {
   /* line 130, ../sass/layout/_header.scss */
   .primary-nav ul.toggle-nav li {
@@ -754,23 +750,23 @@ header .logo .brand {
     margin-left: 1em;
   }
 }
-/* line 136, ../sass/layout/_header.scss */
+/* line 135, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav li a {
   color: #ffffff;
 }
-/* line 139, ../sass/layout/_header.scss */
+/* line 138, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav li a:hover {
   color: #e78592;
   text-decoration: underline;
 }
-/* line 144, ../sass/layout/_header.scss */
+/* line 143, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav .current-item {
   background-color: #d8d8d8;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 148, ../sass/layout/_header.scss */
+/* line 147, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav .current-item a,
 .primary-nav ul.toggle-nav .current-item a:hover,
 .primary-nav ul.toggle-nav .current-item a:focus {
