@@ -79,6 +79,11 @@ header {
 		float: left;
 		width: 100%;
 		padding-bottom: 1px;
+		-moz-transition:max-height 500ms ease;
+	    -o-transition:max-height 500ms ease;
+	    transition:max-height 500ms ease;
+	    max-height: 150px;
+
 		@media screen and ($break-md) {
 			display: none;
 		}
@@ -88,7 +93,8 @@ header {
 		}
 		.current-item {
 			font-weight: bold;
-			background-color: $white;
+			background-color: $grey;
+			@include border-radius(0.5em);
 			a {
 				color: $blackTint25;
 			}
@@ -106,7 +112,11 @@ header {
 		}
 	}
 	ul.toggle-nav {
-		display: none;
+		//display: none;
+		-moz-transition:max-height 500ms ease;
+	    -o-transition:max-height 500ms ease;
+	    transition:max-height 500ms ease;
+	    max-height: 0;
 		@media screen and ($break-md) {
 			display: block;
 			float: right;

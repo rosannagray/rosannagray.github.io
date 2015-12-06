@@ -679,6 +679,10 @@ header .logo .brand {
   float: left;
   width: 100%;
   padding-bottom: 1px;
+  -moz-transition: max-height 500ms ease;
+  -o-transition: max-height 500ms ease;
+  transition: max-height 500ms ease;
+  max-height: 150px;
 }
 @media screen and (min-width: 40.063em) {
   /* line 75, ../sass/layout/_header.scss */
@@ -686,21 +690,24 @@ header .logo .brand {
     display: none;
   }
 }
-/* line 85, ../sass/layout/_header.scss */
+/* line 90, ../sass/layout/_header.scss */
 .primary-nav ul.active li {
   border-bottom: 1px solid #d8d8d8;
   margin-left: -2.5em;
 }
-/* line 89, ../sass/layout/_header.scss */
+/* line 94, ../sass/layout/_header.scss */
 .primary-nav ul.active .current-item {
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: #d8d8d8;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
 }
-/* line 92, ../sass/layout/_header.scss */
+/* line 98, ../sass/layout/_header.scss */
 .primary-nav ul.active .current-item a {
   color: #3f3f3f;
 }
-/* line 96, ../sass/layout/_header.scss */
+/* line 102, ../sass/layout/_header.scss */
 .primary-nav ul.active a {
   text-decoration: none;
   transition: color linear 0.15s;
@@ -709,16 +716,19 @@ header .logo .brand {
   display: block;
   margin-bottom: 0.2em;
 }
-/* line 104, ../sass/layout/_header.scss */
+/* line 110, ../sass/layout/_header.scss */
 .primary-nav ul.active a:focus {
   outline: 1px solid #ffffff;
 }
-/* line 108, ../sass/layout/_header.scss */
+/* line 114, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav {
-  display: none;
+  -moz-transition: max-height 500ms ease;
+  -o-transition: max-height 500ms ease;
+  transition: max-height 500ms ease;
+  max-height: 0;
 }
 @media screen and (min-width: 40.063em) {
-  /* line 108, ../sass/layout/_header.scss */
+  /* line 114, ../sass/layout/_header.scss */
   .primary-nav ul.toggle-nav {
     display: block;
     float: right;
@@ -726,34 +736,34 @@ header .logo .brand {
     background: none;
   }
 }
-/* line 116, ../sass/layout/_header.scss */
+/* line 126, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav li {
   border: 0;
 }
 @media screen and (min-width: 40.063em) {
-  /* line 116, ../sass/layout/_header.scss */
+  /* line 126, ../sass/layout/_header.scss */
   .primary-nav ul.toggle-nav li {
     float: left;
     margin-left: 1em;
   }
 }
-/* line 122, ../sass/layout/_header.scss */
+/* line 132, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav li a {
   color: #ffffff;
 }
-/* line 125, ../sass/layout/_header.scss */
+/* line 135, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav li a:hover {
   color: #e78592;
   text-decoration: underline;
 }
-/* line 130, ../sass/layout/_header.scss */
+/* line 140, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav .current-item {
   background-color: #d8d8d8;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 134, ../sass/layout/_header.scss */
+/* line 144, ../sass/layout/_header.scss */
 .primary-nav ul.toggle-nav .current-item a,
 .primary-nav ul.toggle-nav .current-item a:hover,
 .primary-nav ul.toggle-nav .current-item a:focus {
