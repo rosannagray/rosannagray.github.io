@@ -1,6 +1,7 @@
 /*Table of contents
-1 Responsive images
+1. Responsive images
 2. Overlay images
+3. Bordered images
 =====================================================================================================
 */
 
@@ -74,4 +75,10 @@
 }
 .outer-box:hover .caption .bigger {
   text-decoration: underline;
+}
+
+/*3. Bordered images
+=====================================================================================================*/
+.bordered {
+  border: 1px solid $greyShade10;
 }

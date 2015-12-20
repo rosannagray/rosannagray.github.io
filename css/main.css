@@ -949,13 +949,14 @@ button:focus,
 }
 
 /*Table of contents
-1 Responsive images
+1. Responsive images
 2. Overlay images
+3. Bordered images
 =====================================================================================================
 */
 /*1. Responsive images
 =====================================================================================================*/
-/* line 9, ../sass/components/_images.scss */
+/* line 10, ../sass/components/_images.scss */
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -964,16 +965,16 @@ button:focus,
 
 /*2. Overlay images
 =====================================================================================================*/
-/* line 17, ../sass/components/_images.scss */
+/* line 18, ../sass/components/_images.scss */
 .outer-box {
   display: block;
   position: relative;
 }
-/* line 21, ../sass/components/_images.scss */
+/* line 22, ../sass/components/_images.scss */
 .outer-box img {
   border: 1px solid #bfbfbf;
 }
-/* line 24, ../sass/components/_images.scss */
+/* line 25, ../sass/components/_images.scss */
 .outer-box .caption {
   border: 1px solid #bfbfbf;
   -webkit-box-shadow: 0 8px 6px -6px #7f7f7f;
@@ -982,20 +983,20 @@ button:focus,
   padding: 0 1em 1em 1em;
   background-color: #f2f2f2;
 }
-/* line 32, ../sass/components/_images.scss */
+/* line 33, ../sass/components/_images.scss */
 .outer-box .caption .bigger {
   color: #d1283e;
 }
-/* line 35, ../sass/components/_images.scss */
+/* line 36, ../sass/components/_images.scss */
 .outer-box .caption p {
   margin: 0.5em 0;
   color: #000;
 }
-/* line 39, ../sass/components/_images.scss */
+/* line 40, ../sass/components/_images.scss */
 .outer-box .caption .inline-list {
   margin-left: 1px;
 }
-/* line 42, ../sass/components/_images.scss */
+/* line 43, ../sass/components/_images.scss */
 .outer-box .caption .label {
   width: auto;
   -moz-border-radius: 0.5em;
@@ -1005,7 +1006,7 @@ button:focus,
   background-color: #d8d8d8;
   padding: 0.25em 0.5em;
 }
-/* line 51, ../sass/components/_images.scss */
+/* line 52, ../sass/components/_images.scss */
 .outer-box .overlay {
   background: none;
   box-shadow: inset 0 0 1em #505050, 0 0 1em #3f3f3f;
@@ -1018,18 +1019,25 @@ button:focus,
   padding: 0;
   transition: opacity .5s;
 }
-/* line 66, ../sass/components/_images.scss */
+/* line 67, ../sass/components/_images.scss */
 .outer-box:hover .overlay, .outer-box:focus .overlay {
   opacity: .9;
   transition: opacity .5s;
 }
 
-/* line 72, ../sass/components/_images.scss */
+/* line 73, ../sass/components/_images.scss */
 .outer-box:hover {
   text-decoration: none;
 }
 
-/* line 75, ../sass/components/_images.scss */
+/* line 76, ../sass/components/_images.scss */
 .outer-box:hover .caption .bigger {
   text-decoration: underline;
+}
+
+/*3. Bordered images
+=====================================================================================================*/
+/* line 82, ../sass/components/_images.scss */
+.bordered {
+  border: 1px solid #c2c2c2;
 }
