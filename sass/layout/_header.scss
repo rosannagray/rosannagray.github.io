@@ -1,13 +1,7 @@
-/*Table of contents
-1. Header styles
-2. Primary navigation
-	2.1 Menu toggle
-	2.2 Toggle navigation
+/* Page header
 =====================================================================================================
 */
 
-/*1. Header styles
-=====================================================================================================*/
 header {
   background-color: $charcoal;
   padding: 1em 0;
@@ -42,9 +36,8 @@ header {
   }
 }
 
-/*2. Primary navigation
-=====================================================================================================*/
-/*2.1 Menu toggle*/
+/* ------ Primary navigation ------ */
+/* Menu toggle */
 .toggle-btn {
     padding: 0.5em 1em;
     text-decoration: none;
@@ -70,7 +63,7 @@ header {
 	color: $white;
 }
 
-/*2.2 Toggle navigation*/
+/* Toggle navigation */
 .primary-nav {
 	ul.active {
 		list-style: none;

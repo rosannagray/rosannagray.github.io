@@ -1,8 +1,7 @@
-/*Table of contents
-1. Footer styles
+/* Page footer
+=====================================================================================================
+*/
 
-/*1. Footer styles
-=====================================================================================================*/
 * {
   margin: 0;
 }
@@ -11,7 +10,6 @@ html, body {
 }
 .page-wrap {
   min-height: 100%;
-  /* equal to footer height */
   margin-bottom: 2em; 
 }
 .page-wrap:after {

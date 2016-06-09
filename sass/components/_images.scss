@@ -1,20 +1,15 @@
-/*Table of contents
-1. Responsive images
-2. Overlay images
-3. Bordered images
+/* Images
 =====================================================================================================
 */
 
-/*1. Responsive images
-=====================================================================================================*/
+/* ------ Responsive images ------ */
 .img-responsive {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-/*2. Overlay images
-=====================================================================================================*/
+/* ------ Overlay images ------ */
 .outer-box {
   display:block;
   position:relative;
@@ -77,8 +72,7 @@
   text-decoration: underline;
 }
 
-/*3. Bordered images
-=====================================================================================================*/
+/* ------ Bordered images ------ */
 .bordered {
   border: 1px solid $greyShade10;
 }

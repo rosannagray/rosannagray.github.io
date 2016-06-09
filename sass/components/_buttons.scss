@@ -1,11 +1,8 @@
-/*Table of contents
-1. Button styles
-2. Back to top button
+/* Buttons
 =====================================================================================================
 */
 
-/*1. Button styles
-=====================================================================================================*/
+/* ------ Primary button ------ */
 button,
 .button {
 	background: none;
@@ -27,8 +24,7 @@ button:focus,
 	outline-offset: 2px;
 }
 
-/*2. Back to top button
-=====================================================================================================*/
+/* ------ Back-to-top button ------ */
 .up-button {
     color: $white;
     border: 2px solid $white;

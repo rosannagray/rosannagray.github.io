@@ -1,13 +1,8 @@
-/*Table of contents
-1. Vertical rhythm
-2. Font family
-3. Links
-4. Labels
+/* Typography
 =====================================================================================================
 */
 
-/*1. Vertical rhythm
-=====================================================================================================*/
+/* ------ Vertical rhythm ------ */
 html {
     font-size: 62.5%;
 }
@@ -89,9 +84,6 @@ h6,
     line-height:  1.0909;
     margin:  1.0909em 0  1.0909em 0;
 }
-/* avoid collapsing margins
-you might need this, depending on your design
-*/
 /*
 h1:first-child, 
 h2:first-child, 
@@ -102,7 +94,6 @@ h6:first-child {
     margin-top: 0;
 }
 */
-/* avoid last-child bottom margin */ 
 ul:last-child, 
 ol:last-child, 
 dl:last-child, 
@@ -111,15 +102,11 @@ pre:last-child,
 table:last-child {
     margin-bottom: 0;
 }
-
-
-/* avoid supp margin on nested elements */
 li p,
 li ul {
     margin-top: 0;
     margin-bottom: 0;
 }
-/* you shall not pass */
 textarea,
 table, 
 td, 
@@ -149,13 +136,12 @@ table {
     margin-bottom: 1.5em;
 }
 
-/*2. Font family
-=====================================================================================================*/
+/* ------ Font family ------ */
 html, body {
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
-/*3. Links
-=====================================================================================================*/
+
+/* ------ Links ------ */
 a {
     color: $darkPink;
     text-decoration: none;
@@ -169,8 +155,8 @@ a:focus {
     outline: 1px solid $darkPink;
     outline-offset: 2px;
 }
-/*4. Labels
-=====================================================================================================*/
+
+/* ------ Labels ------ */
 p {
     .label {
         margin: 0 auto;

@@ -1,12 +1,8 @@
-/*Table of contents
-1. Inline list
-2. No bullet list
-3. Styled description list
+/* Lists
 =====================================================================================================
 */
 
-/*1. Inline list
-=====================================================================================================*/
+/* ------ Inline list ------ */
 .inline-list {
 	list-style: none;
     margin-top: 0;
@@ -28,16 +24,14 @@
 	display: block;
 }
 
-/*2. No bullet list
-=====================================================================================================*/
+/* ------ Bulletless list ------ */
 .no-bullet {
 	list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-/*3. Styled description list
-=====================================================================================================*/
+/* ------ Description list ------ */
 dl {
     dt {
         font-size: 1.125em;

@@ -1,12 +1,8 @@
-/*Table of contents
-1. Introduction
-2. Main content
-3. Contact Information
+/* Page body
 =====================================================================================================
 */
 
-/*1. Introductions
-=====================================================================================================*/
+/* ------ Introduction ------ */
 .intro {
 	h1 {
 		border-bottom: 2px solid $darkPink;
@@ -14,8 +10,7 @@
 	}
 }
 
-/*2. Main content
-=====================================================================================================*/
+/* ------ Main content ------ */
 section {
 	padding-bottom: 1em;
 }
@@ -25,8 +20,7 @@ h2 {
 	padding: 0.2em;
 }
 
-/*3. Contact Information
-=====================================================================================================*/
+/* ------ Other content ------ */
 .contact-area {
 	background-color: $grey;
 	padding-bottom: 2em;
