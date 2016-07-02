@@ -3,6 +3,7 @@
 */
 
 /* ------ Vertical rhythm ------ */
+
 html {
     font-size: 62.5%;
 }
@@ -10,6 +11,22 @@ body {
     font-size: 1.6em;
     line-height: 1.5;
 }
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $paragraph;
+}
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: $paragraph;
+    font-weight: 700;
+}
+
 p, 
 ul, 
 ol, 
@@ -18,46 +35,58 @@ blockquote,
 pre, 
 td, 
 th, 
-textarea {
+textarea,
+caption {
+    font-family: $paragraph;
     font-size: 1em; /* equiv 16px */
     line-height: 1.5;
-    margin: 1.5em 0;
+    margin: 0 0 1.5em 0;
 }
 h1, 
 .h1-like {
-    font-size:  2.9375em; /* equiv 47px */
-    line-height: 1.0212;
-    margin:  1.0212em 0 .5106em 0;
+    font-family: $headings;
+    font-size:  2em;
+    line-height:  1;
+    margin: 0 0  1em 0;
+    @media (min-width: $bp-l) {
+        font-size: 2.2em;
+    }
 }
 h2, 
 .h2-like {
-    font-size:  2.4375em; /* equiv 39px */
-    line-height: 1.2308;
-    margin:  1.2308em 0 .6154em 0;
+    font-size:  1.25em; /* equiv 20px */
+    line-height:  1.2;
+    margin: 0 0  1.2em 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
 }
 h3, 
 .h3-like {
-    font-size:  2.0625em; /* equiv 33px */
-    line-height: 1.4546;
-    margin:  1.4546em 0 .7273em 0;
+    font-size:  1.125em; /* equiv 18px */
+    line-height:  1.3333;
+    //margin: 0 0  1.3333em 0;
+    margin: 0 0  .3333em 0;
 }
 h4, 
 .h4-like {
-    font-size:  1.6875em; /* equiv 27px */
-    line-height: 1.7778;
-    margin:  1.7778em 0 .8889em 0;
+    font-size:  1.0625em; /* equiv 17px */
+    line-height:  1.4118;
+    //margin: 0 0  1.4118em 0;
+    margin: 0 0  .4118em 0;
 }
 h5, 
 .h5-like {
-    font-size:  1.4375em; /* equiv 23px */
-    line-height:  1.0435;
-    margin:  2.087em 0  1.0435em 0;
+    font-size:  1em; /* equiv 16px */
+    line-height:  1.5;
+    //margin: 0 0  1.5em 0;
+    margin: 0 0  .5em 0;
 }
 h6, 
 .h6-like {
-    font-size:  1.1875em; /* equiv 19px */
-    line-height:  1.2632;
-    margin:  2.5264em 0  1.2632em 0;
+    font-size:  1em; /* equiv 16px */
+    line-height:  1.5;
+    //margin: 0 0  1.5em 0;
+    margin: 0 0  .5em 0;
 }
 .smaller {
     font-size: .75em; /* equiv 12px */
@@ -84,29 +113,12 @@ h6,
     line-height:  1.0909;
     margin:  1.0909em 0  1.0909em 0;
 }
-/*
-h1:first-child, 
-h2:first-child, 
-h3:first-child, 
-h4:first-child, 
-h5:first-child, 
-h6:first-child {
-    margin-top: 0;
-}
-*/
-ul:last-child, 
-ol:last-child, 
-dl:last-child, 
-blockquote:last-child, 
-pre:last-child, 
-table:last-child {
-    margin-bottom: 0;
-}
 li p,
 li ul {
     margin-top: 0;
     margin-bottom: 0;
 }
+/* you shall not pass */
 textarea,
 table, 
 td, 
@@ -116,12 +128,12 @@ pre,
 samp, 
 div, 
 p {
-    word-wrap: break-all;
-    -webkit-hyphens: manual;
-    -moz-hyphens: manual;
-    -ms-hyphens: manual;
-    -o-hyphens: manual;
-    hyphens: manual;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
 }
 code, 
 pre, 
@@ -136,31 +148,18 @@ table {
     margin-bottom: 1.5em;
 }
 
-/* ------ Font family ------ */
-html, body {
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-}
-
 /* ------ Links ------ */
 a {
     color: $darkPink;
     text-decoration: none;
+    cursor: pointer;
 }
 a:hover {
-    color: $blackTint25;
+    color: $black;
     text-decoration: underline;
 }
 a:focus {
-    color: $black;
+    color: black;
     outline: 1px solid $darkPink;
     outline-offset: 2px;
-}
-
-/* ------ Labels ------ */
-p {
-    .label {
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-    }
 }

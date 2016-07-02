@@ -2,8 +2,14 @@
 =====================================================================================================
 */
 
+/* ------ Bulleted list ------ */
+.bulleted__list {
+    list-style-type: disc;
+    margin-left: 1em;
+}
+
 /* ------ Inline list ------ */
-.inline-list {
+.inline__list {
 	list-style: none;
     margin-top: 0;
     margin-bottom: 0.94444rem;
@@ -12,33 +18,12 @@
     overflow: hidden;
     padding: 0;
 }
-
-.inline-list > li {
+.inline__list > li {
     display: block;
     float: left;
     list-style: none;
     margin: 0.2em 1.22222rem 0.2em 0;
 }
-
-.inline-list > li > * {
+.inline__list > li > * {
 	display: block;
-}
-
-/* ------ Bulletless list ------ */
-.no-bullet {
-	list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-/* ------ Description list ------ */
-dl {
-    dt {
-        font-size: 1.125em;
-        color: $black;
-        font-weight: bold;
-    }
-    dd {
-        margin-bottom: 1em;
-    }
 }
