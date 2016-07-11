@@ -1,6 +1,8 @@
 @import 'helpers/mixins';
 
-// VITAL CSS
+/* Gridder
+=====================================================================================================
+*/
 .gridder{
     background-color: $black;
     margin: 0px;
@@ -18,6 +20,7 @@
     position: relative;
     img:hover {
         cursor: pointer;
+        outline: .2em solid $darkPink;
     }
 }
 

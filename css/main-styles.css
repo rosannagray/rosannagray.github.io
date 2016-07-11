@@ -654,7 +654,10 @@ footer .social__media li {
 /* Mixins
 =====================================================================================================
 */
-/* line 4, ../sass/layout/_jquery.gridder.scss */
+/* Gridder
+=====================================================================================================
+*/
+/* line 6, ../sass/layout/_jquery.gridder.scss */
 .gridder {
   background-color: #333;
   margin: 0px;
@@ -662,43 +665,44 @@ footer .social__media li {
   list-style-type: none;
   font-size: 0;
 }
-/* line 10, ../sass/layout/_jquery.gridder.scss */
+/* line 12, ../sass/layout/_jquery.gridder.scss */
 .gridder a {
   color: #e05d6e;
 }
-/* line 13, ../sass/layout/_jquery.gridder.scss */
+/* line 15, ../sass/layout/_jquery.gridder.scss */
 .gridder a:hover {
   color: #f2f2f2;
 }
 
-/* line 17, ../sass/layout/_jquery.gridder.scss */
+/* line 19, ../sass/layout/_jquery.gridder.scss */
 .gridder-list {
   position: relative;
 }
-/* line 19, ../sass/layout/_jquery.gridder.scss */
+/* line 21, ../sass/layout/_jquery.gridder.scss */
 .gridder-list img:hover {
   cursor: pointer;
+  outline: 0.2em solid #d1283e;
 }
 
-/* line 24, ../sass/layout/_jquery.gridder.scss */
+/* line 27, ../sass/layout/_jquery.gridder.scss */
 .gridder-list, .gridder-show {
   font-size: 16px;
 }
 
-/* line 28, ../sass/layout/_jquery.gridder.scss */
+/* line 31, ../sass/layout/_jquery.gridder.scss */
 .gridder-list {
   display: inline-block;
   vertical-align: top;
   padding: .5em;
 }
 @media (min-width: 420px) {
-  /* line 28, ../sass/layout/_jquery.gridder.scss */
+  /* line 31, ../sass/layout/_jquery.gridder.scss */
   .gridder-list {
     padding: 0;
   }
 }
 
-/* line 37, ../sass/layout/_jquery.gridder.scss */
+/* line 40, ../sass/layout/_jquery.gridder.scss */
 .gridder-show {
   background-color: #292929;
   color: #f2f2f2;
@@ -708,15 +712,15 @@ footer .social__media li {
   position: relative;
 }
 
-/* line 45, ../sass/layout/_jquery.gridder.scss */
+/* line 48, ../sass/layout/_jquery.gridder.scss */
 .gridder-navigation {
   padding: 1em 1.5em 1.5em 1.5em;
 }
-/* line 47, ../sass/layout/_jquery.gridder.scss */
+/* line 50, ../sass/layout/_jquery.gridder.scss */
 .gridder-navigation .gridder-nav {
   display: none;
 }
-/* line 50, ../sass/layout/_jquery.gridder.scss */
+/* line 53, ../sass/layout/_jquery.gridder.scss */
 .gridder-navigation .gridder-close {
   color: #f2f2f2;
   border: 1px solid #f2f2f2;
@@ -726,23 +730,23 @@ footer .social__media li {
   border-radius: 0.25em;
 }
 
-/* line 57, ../sass/layout/_jquery.gridder.scss */
+/* line 60, ../sass/layout/_jquery.gridder.scss */
 .gridder-image,
 .gridder-description {
   padding: 0 1.5em 1.5em 1.5em;
 }
 
-/* line 61, ../sass/layout/_jquery.gridder.scss */
+/* line 64, ../sass/layout/_jquery.gridder.scss */
 .gridder-content {
   display: none;
 }
 
-/* line 65, ../sass/layout/_jquery.gridder.scss */
+/* line 68, ../sass/layout/_jquery.gridder.scss */
 .gridder-padding {
   padding-top: 1em;
 }
 
-/* line 68, ../sass/layout/_jquery.gridder.scss */
+/* line 71, ../sass/layout/_jquery.gridder.scss */
 .gridder-list {
   width: 100%;
 }
@@ -757,7 +761,7 @@ footer .social__media li {
   margin-bottom: 0;
 }
 @media (min-width: 420px) {
-  /* line 68, ../sass/layout/_jquery.gridder.scss */
+  /* line 71, ../sass/layout/_jquery.gridder.scss */
   .gridder-list {
     width: 49.5%;
   }
@@ -773,7 +777,7 @@ footer .social__media li {
   }
 }
 @media (min-width: 1100px) {
-  /* line 68, ../sass/layout/_jquery.gridder.scss */
+  /* line 71, ../sass/layout/_jquery.gridder.scss */
   .gridder-list {
     width: 24.25%;
   }
@@ -789,7 +793,7 @@ footer .social__media li {
   }
 }
 
-/* line 77, ../sass/layout/_jquery.gridder.scss */
+/* line 80, ../sass/layout/_jquery.gridder.scss */
 .alt-gridder .gridder-list {
   width: 100%;
 }
@@ -804,7 +808,7 @@ footer .social__media li {
   margin-bottom: 0;
 }
 @media (min-width: 420px) {
-  /* line 77, ../sass/layout/_jquery.gridder.scss */
+  /* line 80, ../sass/layout/_jquery.gridder.scss */
   .alt-gridder .gridder-list {
     width: 32.66667%;
   }
@@ -820,7 +824,7 @@ footer .social__media li {
   }
 }
 @media (min-width: 1100px) {
-  /* line 77, ../sass/layout/_jquery.gridder.scss */
+  /* line 80, ../sass/layout/_jquery.gridder.scss */
   .alt-gridder .gridder-list {
     width: 19.2%;
   }
