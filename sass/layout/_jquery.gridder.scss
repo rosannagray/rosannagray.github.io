@@ -3,7 +3,7 @@
 /* Gridder
 =====================================================================================================
 */
-.gridder{
+.gridder {
     background-color: $black;
     margin: 0px;
     padding: 0px;
@@ -24,11 +24,11 @@
     }
 }
 
-.gridder-list, .gridder-show{
+.gridder-list, .gridder-show {
     font-size:16px;
 }
 
-.gridder-list{ 
+.gridder-list { 
     display: inline-block;
     vertical-align: top;
     padding: .5em;
@@ -37,7 +37,7 @@
         padding: 0;
     }
 }
-.gridder-show{
+.gridder-show {
     background-color: shade($black, 20%);
     color: $white;
     display: block;
@@ -61,14 +61,14 @@
 .gridder-description {
     padding: 0 1.5em 1.5em 1.5em;
 }
-.gridder-content{
+.gridder-content {
     display: none;
 }
 
 .gridder-padding {
     padding-top: 1em;
 }
-.gridder-list{
+.gridder-list {
     @include rowMachine(1,1%);
     @media (min-width: $bp-s) {
          @include rowMachine(2,1%);
@@ -77,12 +77,18 @@
          @include rowMachine(4,1%);
     }
 }
-.alt-gridder .gridder-list{
+.alt-gridder .gridder-list {
     @include rowMachine(1,1%);
     @media (min-width: $bp-s) {
          @include rowMachine(3,1%);
     }
     @media (min-width: $bp-l) {
          @include rowMachine(5,1%);
+    }
+}
+.gridder-expanded-content .gridder-image {
+    display: none;
+    @media (min-width: $bp-s) {
+        display: block;
     }
 }

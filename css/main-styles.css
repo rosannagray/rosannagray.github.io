@@ -840,6 +840,17 @@ footer .social__media li {
   }
 }
 
+/* line 89, ../sass/layout/_jquery.gridder.scss */
+.gridder-expanded-content .gridder-image {
+  display: none;
+}
+@media (min-width: 420px) {
+  /* line 89, ../sass/layout/_jquery.gridder.scss */
+  .gridder-expanded-content .gridder-image {
+    display: block;
+  }
+}
+
 /* Typography
 =====================================================================================================
 */
