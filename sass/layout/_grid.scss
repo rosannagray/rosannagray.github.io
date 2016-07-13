@@ -147,15 +147,17 @@ footer {
     .about__photo {
         @include span(3);
         padding: 0 1em 2em;
-        animation-duration: 2s;
-        animation-name: bounceIn;
-        transition: all .33s ease;
         img {
             width: 100%;
             height: auto;
             border-radius: 50%;
             border: 0.2em solid $cream;
         }
+    }
+    .bounce__in {
+      animation-duration: 2s;
+      animation-name: bounceIn;
+      transition: all .33s ease;
     }
     .about__text {
         @include span(9 last);
